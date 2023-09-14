@@ -19,17 +19,19 @@
             <alpha filename="$data/objects/squarebales/squarebale240/squarebale240_alpha.dds"/>
             <fermenting outputFillType="silage" requiresWrapping="true" time="1"/>
         </fillType>
-        <fillType name="dryGrass_windrow" capacity="8000" mass="100" forceAcceleration="10" supportsWrapping="false">
+        <fillType name="dryGrass_windrow" capacity="8000" mass="100" forceAcceleration="10" supportsWrapping="true">
             <diffuse filename="$data/objects/squarebales/squarebale240/squarebaleHay240_diffuse.dds"/>
             <normal filename="$data/objects/squarebales/squarebale240/squarebale240_normal.dds"/>
             <specular filename="$data/objects/squarebales/squarebale240/squarebale240_specular.dds"/>
             <alpha filename="$data/objects/squarebales/squarebale240/squarebale240_alpha.dds"/>
+            <fermenting outputFillType="silage" requiresWrapping="true" time="1"/>
         </fillType>
-        <fillType name="straw" capacity="9000" mass="100" forceAcceleration="10" supportsWrapping="false">
+        <fillType name="straw" capacity="9000" mass="100" forceAcceleration="10" supportsWrapping="true">
             <diffuse filename="$data/objects/squarebales/squarebale240/squarebaleStraw240_diffuse.dds"/>
             <normal filename="$data/objects/squarebales/squarebale240/squarebale240_normal.dds"/>
             <specular filename="$data/objects/squarebales/squarebale240/squarebale240_specular.dds"/>
             <alpha filename="$data/objects/squarebales/squarebale240/squarebale240_alpha.dds"/>
+            <fermenting outputFillType="silage" requiresWrapping="true" time="1"/>
         </fillType>
         <fillType name="silage" capacity="6500" mass="100" forceAcceleration="7" supportsWrapping="false">
             <diffuse filename="$data/objects/squarebales/squarebale240/squarebaleSilage240_diffuse.dds"/>

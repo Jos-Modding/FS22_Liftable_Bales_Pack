@@ -313,6 +313,22 @@
                 <inlineBale filename="$data/objects/inlineBales/roundbales/inlineBale_round180.xml" />
                 <railing width="0.90"/>
             </baleType>
+            <!-- Custom bales hay/straw wrap -->
+            <baleType startNode="roundBaleNode125">
+                <size diameter="1.25" width="1.26" />
+                <inlineBale filename="$data/objects/inlineBales/roundbales/inlineBale_round125.xml" />
+                <railing width="0.65"/>
+            </baleType>
+            <baleType startNode="roundBaleNode150">
+                <size diameter="1.50" width="1.26" />
+                <inlineBale filename="$data/objects/inlineBales/roundbales/inlineBale_round150.xml" />
+                <railing width="0.75"/>
+            </baleType>
+            <baleType startNode="roundBaleNode180">
+                <size diameter="1.80" width="1.26" />
+                <inlineBale filename="$data/objects/inlineBales/roundbales/inlineBale_round180.xml" />
+                <railing width="0.90"/>
+            </baleType>
         </baleTypes>
 
         <wrappingNodes>
@@ -333,6 +349,7 @@
         <wrappingColorConfiguration name="$l10n_ui_colorRed"  color="SHARED_RD1" price="0" />
         <wrappingColorConfiguration name="Kubota" color="KUBOTA_ORANGE1" price="0"/>
         <wrappingColorConfiguration name="Vermeer" color="VERMEER_YELLOW" price="0"/>
+        <wrappingColorConfiguration name="Goeweil" color="GOEWEIL_BLUE1" price="0"/>
 
         <material name="wrap_mat" shaderParameter="colorMat0"/>
         <material name="wrapRolls_mat" shaderParameter="colorMat0"/>

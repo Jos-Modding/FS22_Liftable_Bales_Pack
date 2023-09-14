@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="baler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="xml/baler4160Vwrap.xml">
+        <attributes>
+            <set path="vehicle.storeData.brand" value="FENDT"/>
+            <set path="vehicle.storeData.name" value="Rotana 160 V Combi Silage"/>
+            <set path="vehicle.storeData.image" value="$data/vehicles/fendt/rotana160V/store_rotana160V.png"/>
+
+            <set path="vehicle.designConfigurations.designConfiguration(0)#isSelectable" value="false"/>
+            <set path="vehicle.designConfigurations.designConfiguration(1)#isSelectable" value="true"/>
+            <set path="vehicle.designConfigurations.designConfiguration(1)#isDefault" value="true"/>
+
+            <set path="vehicle.wheels.rimColor" value="FENDT_RED1"/>
+            <set path="vehicle.wheels.rimColor#material" value="0"/>
+
+            <set path="vehicle.wheels.hubs.hub(2).color0"  value="FENDT_RED1" />
+            <set path="vehicle.wheels.hubs.hub(3).color0"  value="FENDT_RED1" />
+            <set path="vehicle.wheels.hubs.hub(4).color0"  value="FENDT_RED1" />
+            <set path="vehicle.wheels.hubs.hub(5).color0"  value="FENDT_RED1" />
+            <set path="vehicle.wheels.hubs.hub(6).color0"  value="FENDT_RED1" />
+            <set path="vehicle.wheels.hubs.hub(7).color0"  value="FENDT_RED1" />
+            <set path="vehicle.wheels.hubs.hub(8).color0"  value="FENDT_RED1" />
+            <set path="vehicle.wheels.hubs.hub(9).color0"  value="FENDT_RED1" />
+
+            <set path="vehicle.wheels.hubs.hub(2).color0#material"  value="0" />
+            <set path="vehicle.wheels.hubs.hub(3).color0#material"  value="0" />
+            <set path="vehicle.wheels.hubs.hub(4).color0#material"  value="0" />
+            <set path="vehicle.wheels.hubs.hub(5).color0#material"  value="0" />
+            <set path="vehicle.wheels.hubs.hub(6).color0#material"  value="0" />
+            <set path="vehicle.wheels.hubs.hub(7).color0#material"  value="0" />
+            <set path="vehicle.wheels.hubs.hub(8).color0#material"  value="0" />
+            <set path="vehicle.wheels.hubs.hub(9).color0#material"  value="0" />
+        </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>Rotana 160 V Combi</name>
+        <image>$data/vehicles/fendt/rotana160V/store_rotana160V.png</image>
+        <brand>FENDT</brand>
+        <category>balers</category>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+</vehicle>

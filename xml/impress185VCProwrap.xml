@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>IMPRESS 185VC PRO</name>
+        <name>IMPRESS 185VC PRO Silage</name>
         <specs>
             <neededPower>150</neededPower>
         </specs>
@@ -2134,17 +2134,17 @@
     <baler maxPickupLitersPerSecond="350">
         <baleTypes>
             <!-- <baleType isRoundBale="true" width="1.2" diameter="1.25"> -->
-            <baleType isRoundBale="true" width="1.25" diameter="1.25">
+            <baleType isRoundBale="true" width="1.26" diameter="1.25">
                 <nodes baleNode="baleNode125"/>
                 <animations fillAnimation="baleFillAnimation125" unloadAnimation="baleDropAnimation125" dropAnimationTime="5.5"/>
             </baleType>
             <!-- <baleType isRoundBale="true" width="1.2" diameter="1.50"> -->
-            <baleType isRoundBale="true" width="1.25" diameter="1.50">
+            <baleType isRoundBale="true" width="1.26" diameter="1.50">
                 <nodes baleNode="baleNode150"/>
                 <animations fillAnimation="baleFillAnimation150" unloadAnimation="baleDropAnimation150" dropAnimationTime="5.5"/>
             </baleType>
             <!-- <baleType isRoundBale="true" width="1.2" diameter="1.80"> -->
-            <baleType isRoundBale="true" width="1.25" diameter="1.80">
+            <baleType isRoundBale="true" width="1.26" diameter="1.80">
                 <nodes baleNode="baleNode180"/>
                 <animations fillAnimation="baleFillAnimation180" unloadAnimation="baleDropAnimation180" dropAnimationTime="5.5"/>
             </baleType>
@@ -2207,7 +2207,7 @@
 
         <roundBaleWrapper baleNode="baleGrabNode" wrapperNode="baleWrapArms" wrapperRotAxis="2" wrappingTime="12.75" skipUnsupportedBales="true">
             <baleTypes>
-                <baleType width="1.25" diameter="1.25">
+                <baleType width="1.26" diameter="1.25">
                     <textures diffuse="$data/vehicles/poettinger/impress185VCPro/impress185VCProBaleWrap125_diffuse.dds"
                               normal="$data/vehicles/poettinger/impress185VCPro/impress185VCProBaleWrap125_normal.dds"/>
 
@@ -2269,7 +2269,7 @@
                     <objectChange node="wrapperBaleNodeJoints" translationActive="-0.0 -0.136 0.001"/>
                     <objectChange node="baleGrabNode" translationActive="0 0 0" rotationActive="0 0 0"/>
                 </baleType>
-                <baleType width="1.25" diameter="1.50">
+                <baleType width="1.26" diameter="1.50">
                     <textures diffuse="$data/vehicles/poettinger/impress185VCPro/impress185VCProBaleWrap150_diffuse.dds"
                               normal="$data/vehicles/poettinger/impress185VCPro/impress185VCProBaleWrap150_normal.dds"/>
 
@@ -2335,7 +2335,7 @@
                     <objectChange node="wrapperBaleNodeJoints" translationActive="0.0 0.0 0.0"/>
                     <objectChange node="baleGrabNode" translationActive="0 0 0" rotationActive="0 0 0"/>
                 </baleType>
-                <baleType width="1.25" diameter="1.80" skipWrapping="true">
+                <baleType width="1.26" diameter="1.80" skipWrapping="true">
                     <animations>
                         <moveToWrapper animName="moveBaleToWrapper180" animSpeed="1" reverseAfterMove="false"/>
                         <dropFromWrapper animName="dropBaleFromWrapper180" animSpeed="1"/>

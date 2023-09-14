@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="73">
+<modDesc descVersion="77">
 	<author>Jos</author>
-    <version>1.1.0.0</version>
+	<contributors>OlaHaldor</contributors>
+    <version>1.1.1.0</version>
 	<title>
         <en>Liftable Bales Pack</en>
         <de>Anhebbare Ballen Paket</de>
@@ -12,101 +13,121 @@
 All basegame balers and cotton harvesters has been modified to produce bales weighing only 100 kg, thus making them liftable!
 This pack includes trailers to transport these lightweight bales.
 
+Hay and straw bales can be wrapped by special "Silage" balers and wrappers.
+
+The Anderson Group BioBaler WB-55 can produce not only poplar to wood chips bales, but also corn/wheat/barley/oat/canola/sunflower/soybean/sorghum to chaff bales, which can be wrapped for silage.
+
 == Balers ==
 Anderson Group BioBaler WB-55
-- Price: 99500 €
+- Price: $ 99500
 - Bales: round 125 cm
 
 Case IH LB436 H
-- Price: 159500 €
+- Price: $ 159500
 - Bales: square 180/220/240 cm
 
 Claas ROLLANT 455 RC UNIWRAP
-- Price: 78500 €
+- Price: $ 78500
 - Bales: round 125 cm
 
 Claas QUADRANT 5300 FC
-- Price: 153500 €
+- Price: $ 153500
 - Bales: square 180/220/240 cm
 
 Krone BiG Pack 1290 HDP VC
-- Price: 155000 €
+- Price: $ 155000
 - Bales: square 180/220/240 cm
 
 Kuhn VB 3190
-- Price: 57500 €
+- Price: $ 57500
 - Bales: round 125/150/180 cm
 
 Kuhn SB 1290 iD
-- Price: 164000 €
+- Price: $ 164000
 - Bales: square 180/220/240 cm
 
+Fendt Squadra 1290 N UD /
+Massey Ferguson 2370 Ultra HD
+- Price $ 164000
+- Bales: square 180/220/240 cm
+
+Fendt Rotana 160 V Comb /
+Massey Ferguson RB 4160V Protec
+- Price $ 84500
+- Bales: round 125/150 cm
+
 New Holland BigBaler 1290 High Density
-- Price: 159500 €
+- Price: $ 159500
 - Bales: square 180/220/240 cm
 
 Poettinger IMPRESS 125F PRO
-- Price: 48000 €
+- Price: $ 48000
 - Bales: round 125 cm
 
 Poettinger IMPRESS 185VC PRO
-- Price: 99500 €
+- Price: $ 99500
 - Bales: round 125/150/180 cm
 
 == Cotton harvesters ==
 Case IH Module Express 635
-- Price: 485000 €
+- Price: $ 485000
 - Bales: cotton round 10000 liter
 
 John Deere CP690
-- Price: 847000 €
+- Price: $ 847000
 - Bales: cotton square 20000 liter
 
 == Bale wrappers ==
 Anderson Group HYBRID X XTRACTOR
-- Price: 34900 €
+- Price: $ 34900
 - Bales: all square and round
 
 Anderson Group IFX720 XTRACTOR
-- Price: 30000 €
+- Price: $ 30000
 - Bales: round 125/150/180 cm
 
 Kuhn SW 4014
-- Price: 54000 €
-- Bales: round 125/150 cm
+- Price: $ 54000
+- Bales: round 125/150 cm and all square
 
 Kverneland 7850 C
-- Price: 22000 €
+- Price: $ 22000
 - Bales: round 125/150 cm
 
 == Trailers ==
 Farmtech DPW 1800 autoloader
-- Price: 19500 €
+- Price: $ 19500
 - Bales: all square and round
 
 McCormack Cotton Tag Trailer
-- Price: 89000 €
+- Price: $ 89000
 - Bales: cotton round 10000 liter
 
 Arcusin ForStack 8.12
-- Price 37000 €
+- Price $ 37000
 - Bales: square 180/220/240 cm
 
 Arcusin FSX 63.72
-- Price: 90000 €
+- Price: $ 90000
 - Bales: square 180/220/240 cm
 
 Lizard Module 4
-- Price: 26000 €
+- Price: $ 26000
 - Bales: cotton square and round
 
 Lizard Module X Semi
-- Price: 46000 €
+- Price: $ 46000
 - Bales: cotton square and round
 
 Anderson Group RBM2000
-- Price 50500 €
+- Price: $ 50500
 - Bales: round 125/150/180 cm
+
+Changelog 1.1.1.0
+- Added hay and straw to silage bales
+- Added more bale sizes to wrappers
+- Added more crop types to Anderson Group BioBaler WB-55
+- Added Fendt and Massey Ferguson balers introduced in patch 1.9.1.0
 
 Changelog 1.1.0.0
 - Added buyable forage, chaff, and sugarbeet cut bales
@@ -126,6 +147,10 @@ Changelog 1.0.1.0
 <![CDATA[
 Alle Ballenpressen und Baumwollerntemaschinen des Basisspiels wurden modifiziert, um Ballen mit einem Gewicht von nur 100 kg zu produzieren, wodurch sie angehoben werden können!
 Dieses Paket enthält Anhänger zum Transport dieser leichten Ballen.
+
+Heu- und Strohballen können mit speziellen „Silage“-Ballenpressen und -wicklern umwickelt werden.
+
+Der Anderson Group BioBaler WB-55 kann nicht nur Pappelballen zu Hackschnitzelballen produzieren, sondern auch Mais-/Weizen-/Gerste-/Hafer-/Raps-/Sonnenblumen-/Sojabohnen-/Sorghumballen zu Spreuballen, die für die Silage verpackt werden können.
 
 == Ballenpressen ==
 Anderson Group BioBaler WB-55
@@ -156,6 +181,16 @@ Kuhn SB 1290 iD
 - Preis: 164000 €
 - Ballen: rechteckig 180/220/240 cm
 
+Fendt Squadra 1290 N UD /
+Massey Ferguson 2370 Ultra HD
+- Preis: 164000 €
+- Ballen: square 180/220/240 cm
+
+Fendt Rotana 160 V Comb /
+Massey Ferguson RB 4160V Protec
+- Preis: 84500 €
+- Ballen: round 125/150 cm
+
 New Holland BigBaler 1290 High Density
 - Preis: 159500 €
 - Ballen: rechteckig 180/220/240 cm
@@ -180,7 +215,7 @@ John Deere CP690
 == Bale wrappers ==
 Anderson Group HYBRID X XTRACTOR
 - Preis: 34900 €
-- Ballen: runden und rechtecking
+- Ballen: alle runden und rechtecking
 
 Anderson Group IFX720 XTRACTOR
 - Preis: 30000 €
@@ -188,7 +223,7 @@ Anderson Group IFX720 XTRACTOR
 
 Kuhn SW 4014
 - Preis: 54000 €
-- Ballen: runden 125/150 cm
+- Ballen: runden 125/150 cm und alle rechtecking
 
 Kverneland 7850 C
 - Preis: 22000 €
@@ -197,7 +232,7 @@ Kverneland 7850 C
 == Trailers ==
 Farmtech DPW 1800 autoloader
 - Preis: 19500 €
-- Ballen: runden und rechtecking
+- Ballen: alle runden und rechtecking
 
 McCormack Cotton Tag Trailer
 - Preis: 89000 €
@@ -220,8 +255,14 @@ Lizard Module X Semi
 - Ballen: Baumwolle runden und rechtecking
 
 Anderson Group RBM2000
-- Preis 50500 €
+- Preis: 50500 €
 - Ballen: runden 125/150/180 cm
+
+Änderungsprotokoll 1.1.1.0
+- Den Silageballen wurden Heu und Stroh hinzugefügt
+- Den Wicklern wurden weitere Ballengrößen hinzugefügt
+- Dem Anderson Group BioBaler WB-55 wurden weitere Erntearten hinzugefügt
+- Mit Patch 1.9.1.0 eingeführte Ballenpressen von Fendt und Massey Ferguson hinzugefügt
 
 Änderungsprotokoll 1.1.0.0
 - Kaufbares Mischration, Häckselgut und Zuckerrübenschnitzel Ballen hinzugefügt
@@ -239,14 +280,17 @@ Anderson Group RBM2000
 		</de>
     </description>
 	<multiplayer supported="true" />
-	<iconFilename>icon_liftableBalesPack.dds</iconFilename>
+	<iconFilename>icon_LiftableBalesPack.dds</iconFilename>
 	<bales>
 		<bale filename="xml/biomass/biomassBale125.xml" />
 		<bale filename="xml/cottonModules/cottonRoundbale238.xml" />
 		<bale filename="xml/cottonModules/cottonSquarebale488.xml" />
 		<bale filename="xml/roundbales/roundbale125.xml" />
+		<bale filename="xml/roundbales/roundbale125wrap.xml" />
 		<bale filename="xml/roundbales/roundbale150.xml" />
+		<bale filename="xml/roundbales/roundbale150wrap.xml" />
 		<bale filename="xml/roundbales/roundbale180.xml" />
+		<bale filename="xml/roundbales/roundbale180wrap.xml" />
 		<bale filename="xml/squarebales/squarebale180.xml" />
 		<bale filename="xml/squarebales/squarebale220.xml" />
 		<bale filename="xml/squarebales/squarebale240.xml" />
@@ -254,13 +298,19 @@ Anderson Group RBM2000
 	<storeItems>
 		<!-- Balers -->
 		<storeItem xmlFilename="xml/bigBaler1290HD.xml" />
+		<storeItem xmlFilename="xml/baler4160V.xml" />
+		<storeItem xmlFilename="xml/baler4160Vwrap.xml" />
 		<storeItem xmlFilename="xml/bigPack1290HDPVC.xml" />
 		<storeItem xmlFilename="xml/bioBalerWB55.xml" />
 		<storeItem xmlFilename="xml/impress125FPro.xml" />
 		<storeItem xmlFilename="xml/impress185VCPro.xml" />
+		<storeItem xmlFilename="xml/impress185VCProwrap.xml" />
 		<storeItem xmlFilename="xml/lb436HD.xml" />
 		<storeItem xmlFilename="xml/quadrant5300.xml" />
 		<storeItem xmlFilename="xml/rollant455Uniwrap.xml" />
+		<storeItem xmlFilename="xml/rollant455Uniwrapwrap.xml" />
+		<storeItem xmlFilename="xml/rotana169V.xml" />
+		<storeItem xmlFilename="xml/rotana169Vwrap.xml" />
 		<storeItem xmlFilename="xml/sb1290ID.xml" />
 		<storeItem xmlFilename="xml/vb3190.xml" />
 		<storeItem xmlFilename="xml/cp690.xml" />

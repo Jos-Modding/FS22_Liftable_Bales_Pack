@@ -2,7 +2,7 @@
 <bale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/bale.xsd">
     <filename>$data/objects/roundbales/roundbale180/roundbale180.i3d</filename>
-    <size isRoundbale="true" width="1.25" diameter="1.80"/>
+    <size isRoundbale="true" width="1.26" diameter="1.80"/>
     <mountableObject triggerNode="0" forceAcceleration="5" forceLimitScale="1" axisFreeY="false" axisFreeX="false"/>
 
     <uvId>DEFAULT</uvId>
@@ -20,17 +20,19 @@
             <alpha filename="$data/objects/roundbales/roundbale180/roundbale180_alpha.dds"/>
             <fermenting outputFillType="silage" requiresWrapping="true" time="1"/>
         </fillType>
-        <fillType name="dryGrass_windrow" capacity="9000" mass="100" forceAcceleration="8" supportsWrapping="false">
+        <fillType name="dryGrass_windrow" capacity="9000" mass="100" forceAcceleration="8" supportsWrapping="true">
             <diffuse filename="$data/objects/roundbales/roundbale180/roundbaleHay180_diffuse.dds"/>
             <normal filename="$data/objects/roundbales/roundbale180/roundbale180_normal.dds"/>
             <specular filename="$data/objects/roundbales/roundbale180/roundbale180_specular.dds"/>
             <alpha filename="$data/objects/roundbales/roundbale180/roundbale180_alpha.dds"/>
+            <fermenting outputFillType="silage" requiresWrapping="true" time="1"/>
         </fillType>
-        <fillType name="straw" capacity="11000" mass="100" forceAcceleration="8" supportsWrapping="false">
+        <fillType name="straw" capacity="11000" mass="100" forceAcceleration="8" supportsWrapping="true">
             <diffuse filename="$data/objects/roundbales/roundbale180/roundbaleStraw180_diffuse.dds"/>
             <normal filename="$data/objects/roundbales/roundbale180/roundbaleStraw180_normal.dds"/>
             <specular filename="$data/objects/roundbales/roundbale180/roundbaleStraw180_specular.dds"/>
             <alpha filename="$data/objects/roundbales/roundbale180/roundbale180_alpha.dds"/>
+            <fermenting outputFillType="silage" requiresWrapping="true" time="1"/>
         </fillType>
         <fillType name="silage" capacity="7500" mass="100" forceAcceleration="5" supportsWrapping="false">
             <diffuse filename="$data/objects/roundbales/roundbale180/roundbaleSilage180_diffuse.dds"/>

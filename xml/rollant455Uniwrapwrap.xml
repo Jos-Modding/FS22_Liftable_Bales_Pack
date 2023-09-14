@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>ROLLANT 455 RC UNIWRAP</name>
+        <name>ROLLANT 455 RC UNIWRAP Silage</name>
         <specs>
             <neededPower>145</neededPower>
         </specs>
@@ -498,7 +498,7 @@
     <baler maxPickupLitersPerSecond="350">
         <baleTypes>
             <!-- <baleType isRoundBale="true" width="1.2" diameter="1.25"> -->
-            <baleType isRoundBale="true" width="1.25" diameter="1.25">
+            <baleType isRoundBale="true" width="1.26" diameter="1.25">
                 <nodes baleNode="balerBaleNode"/>
                 <animations fillAnimation="fillAnimation" unloadAnimation="unloadBale" dropAnimationTime="7.5"/>
             </baleType>
@@ -576,7 +576,7 @@
             </animations>
 
             <baleTypes>
-                <baleType width="1.25" diameter="1.25">
+                <baleType width="1.26" diameter="1.25">
                     <textures diffuse="$data/vehicles/claas/rollant455Uniwrap/rollant455UniwrapBaleWrap_diffuse.dds"
                               normal="$data/vehicles/claas/rollant455Uniwrap/rollant455UniwrapBaleWrap_normal.dds"/>
 

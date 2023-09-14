@@ -543,6 +543,7 @@
         </wrappingAnimationConfigurations>
 
         <grabber node="baleGrabNode" triggerNode="baleTriggerNode" nearestDistance="1" />
+
         <roundBaleWrapper baleNode="baleDropAnimNode" wrapperNode="wrapper" wrapperRotAxis="2" wrappingTime="10" >
             <animations>
                 <resetAfterDrop animName="resetWrapperAfterBaleDrop" animSpeed="1" />
@@ -659,6 +660,7 @@
                     <objectChange node="baleAnimNodeRot" translationActive="0.013 0.975 -0.051"/>
                     <objectChange node="baleJointAnimNodeRot" translationActive="-0.018 1.494 -0.36"/>
                 </baleType>
+
                 <!-- Custom bales -->
                 <baleType width="1.25" diameter="1.25">
                     <textures diffuse="$data/vehicles/kverneland/wrapper7850C/wrapper7850CBaleWrap125_diffuse.dds"
@@ -770,6 +772,118 @@
                     <objectChange node="baleAnimNodeRot" translationActive="0.013 0.975 -0.051"/>
                     <objectChange node="baleJointAnimNodeRot" translationActive="-0.018 1.494 -0.36"/>
                 </baleType>
+
+                <!-- Custom bales hay/straw wrap -->
+                <baleType width="1.26" diameter="1.25">
+                    <textures diffuse="$data/vehicles/kverneland/wrapper7850C/wrapper7850CBaleWrap125_diffuse.dds"
+                              normal="$data/vehicles/kverneland/wrapper7850C/wrapper7850CBaleWrap125_normal.dds"/>
+
+                    <animations>
+                        <wrapBale animName="wrapBale125" animSpeed="1"/>
+                        <moveToWrapper animName="moveBaleToWrapper125" animSpeed="1" reverseAfterMove="false" />
+                    </animations>
+
+                    <wrappingFoilAnimation referenceNode="wrapper" referenceAxis="2" minRot="22.0" maxRot="-2838" clipNode="leftJoint01" clipName="baleWrap125Source" />
+
+                    <wrappingState>
+                        <key wrappingState="0.0000" time="0.0000" />
+                        <key wrappingState="0.0000" time="0.0353" />
+                        <key wrappingState="0.0375" time="0.0355" />
+                        <key wrappingState="0.0375" time="0.0707" />
+                        <key wrappingState="0.0500" time="0.0709" />
+                        <key wrappingState="0.0500" time="0.0788" />
+                        <key wrappingState="0.0600" time="0.1033" />
+                        <key wrappingState="0.0780" time="0.1033" />
+                        <key wrappingState="0.0780" time="0.1359" />
+                        <key wrappingState="0.1005" time="0.1361" />
+                        <key wrappingState="0.1005" time="0.1630" />
+                        <key wrappingState="0.1200" time="0.1632" />
+                        <key wrappingState="0.1200" time="0.1957" />
+                        <key wrappingState="0.1410" time="0.1959" />
+                        <key wrappingState="0.1410" time="0.2174" />
+                        <key wrappingState="0.1500" time="0.2176" />
+                        <key wrappingState="0.1500" time="0.2337" />
+                        <key wrappingState="0.1620" time="0.2339" />
+                        <key wrappingState="0.1620" time="0.2609" />
+                        <key wrappingState="0.1840" time="0.2611" />
+                        <key wrappingState="0.1840" time="0.2853" />
+                        <key wrappingState="0.2020" time="0.2855" />
+                        <key wrappingState="0.2020" time="0.3043" />
+                        <key wrappingState="0.2250" time="0.3045" />
+                        <key wrappingState="0.2250" time="0.3533" />
+                        <key wrappingState="0.2470" time="0.3535" />
+                        <key wrappingState="0.2470" time="0.3859" />
+                        <key wrappingState="0.2650" time="0.3861" />
+                        <key wrappingState="0.2650" time="0.4103" />
+                        <key wrappingState="0.2870" time="0.4105" />
+                        <key wrappingState="0.2870" time="0.4429" />
+                        <key wrappingState="0.3050" time="0.4431" />
+                        <key wrappingState="0.3050" time="0.4674" />
+                        <key wrappingState="0.3050" time="0.4676" />
+                        <key wrappingState="0.3280" time="0.5082" />
+                        <key wrappingState="1.0000" time="0.5084" />
+                        <key wrappingState="1.0000" time="1.0000" />
+                    </wrappingState>
+
+                    <objectChange node="baleAnimNodeRot" translationActive="0.013 0.844 -0.051"/>
+                    <objectChange node="baleJointAnimNodeRot" translationActive="-0.018 1.363 -0.36"/>
+                </baleType>
+
+                <baleType width="1.26" diameter="1.50">
+                    <textures diffuse="$data/vehicles/kverneland/wrapper7850C/wrapper7850CBaleWrap150_diffuse.dds"
+                              normal="$data/vehicles/kverneland/wrapper7850C/wrapper7850CBaleWrap150_normal.dds"/>
+
+                    <animations>
+                        <wrapBale animName="wrapBale150" animSpeed="1"/>
+                        <moveToWrapper animName="moveBaleToWrapper150" animSpeed="1" reverseAfterMove="false" />
+                    </animations>
+
+                    <wrappingFoilAnimation referenceNode="wrapper" referenceAxis="2" minRot="22.0" maxRot="-2838" clipNode="leftJoint01" clipName="baleWrap150Source" />
+
+                    <wrappingState>
+                        <key wrappingState="0.0000" time="0.0034" />
+                        <key wrappingState="0.0000" time="0.0326" />
+                        <key wrappingState="0.0370" time="0.0328" />
+                        <key wrappingState="0.0370" time="0.0516" />
+                        <key wrappingState="0.0380" time="0.0518" />
+                        <key wrappingState="0.0380" time="0.0707" />
+                        <key wrappingState="0.0553" time="0.0709" />
+                        <key wrappingState="0.0553" time="0.0815" />
+                        <key wrappingState="0.0560" time="0.0817" />
+                        <key wrappingState="0.0560" time="0.1005" />
+                        <key wrappingState="0.0780" time="0.1007" />
+                        <key wrappingState="0.0780" time="0.1332" />
+                        <key wrappingState="0.0960" time="0.1334" />
+                        <key wrappingState="0.0960" time="0.1576" />
+                        <key wrappingState="0.1200" time="0.1578" />
+                        <key wrappingState="0.1200" time="0.1957" />
+                        <key wrappingState="0.1410" time="0.1959" />
+                        <key wrappingState="0.1410" time="0.2147" />
+                        <key wrappingState="0.1430" time="0.2149" />
+                        <key wrappingState="0.1430" time="0.2228" />
+                        <key wrappingState="0.1650" time="0.2230" />
+                        <key wrappingState="0.1650" time="0.2609" />
+                        <key wrappingState="0.1839" time="0.2611" />
+                        <key wrappingState="0.1839" time="0.2880" />
+                        <key wrappingState="0.2070" time="0.2882" />
+                        <key wrappingState="0.2070" time="0.3207" />
+                        <key wrappingState="0.2260" time="0.3209" />
+                        <key wrappingState="0.2260" time="0.3505" />
+                        <key wrappingState="0.2530" time="0.3507" />
+                        <key wrappingState="0.2530" time="0.3859" />
+                        <key wrappingState="0.2705" time="0.3861" />
+                        <key wrappingState="0.2705" time="0.4130" />
+                        <key wrappingState="0.2930" time="0.4132" />
+                        <key wrappingState="0.2930" time="0.4484" />
+                        <key wrappingState="0.3100" time="0.4486" />
+                        <key wrappingState="0.3100" time="0.4755" />
+                        <key wrappingState="1.0000" time="0.4757" />
+                        <key wrappingState="1.0000" time="1.0000" />
+                    </wrappingState>
+
+                    <objectChange node="baleAnimNodeRot" translationActive="0.013 0.975 -0.051"/>
+                    <objectChange node="baleJointAnimNodeRot" translationActive="-0.018 1.494 -0.36"/>
+                </baleType>
             </baleTypes>
 
             <sounds wrappingEndTime="0.8969">
@@ -801,6 +915,7 @@
         <wrappingColorConfiguration name="$l10n_ui_colorRed"  color="SHARED_RD1" price="0" />
         <wrappingColorConfiguration name="Kubota" color="KUBOTA_ORANGE1" price="0"/>
         <wrappingColorConfiguration name="Vermeer" color="VERMEER_YELLOW" price="0"/>
+        <wrappingColorConfiguration name="Goeweil" color="GOEWEIL_BLUE1" price="0"/>
 
         <material name="silageWrap_mat" shaderParameter="colorMat0"/>
         <material name="wrapper7850CRoll_mat" shaderParameter="colorMat0"/>

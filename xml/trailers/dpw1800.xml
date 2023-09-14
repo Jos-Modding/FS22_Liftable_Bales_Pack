@@ -280,6 +280,18 @@
 				<objectChange node="0>0|7|2|0" translationActive="0.618 0 2.589"/> 	
 			<balePlaces startBalePlace="0>0|7|2|6" />
             </baleType>
+            <baleType diameter="1.25" width="1.26">
+                <objectChange node="0>0|7|2|0" translationActive="0.618 0 2.589"/>
+                <balePlaces startBalePlace="0>0|7|2|4" />
+            </baleType>
+            <baleType diameter="1.50" width="1.26">
+                <objectChange node="0>0|7|2|0" translationActive="0.618 0 2.589"/>
+                <balePlaces startBalePlace="0>0|7|2|5" />
+            </baleType>
+            <baleType diameter="1.80" width="1.26">
+                <objectChange node="0>0|7|2|0" translationActive="0.618 0 2.589"/>
+                <balePlaces startBalePlace="0>0|7|2|6" />
+            </baleType>
         </baleTypes>
     </baleLoader>
 

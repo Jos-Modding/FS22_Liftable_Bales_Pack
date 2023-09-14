@@ -155,7 +155,6 @@
         </sounds>
 
         <baleTypes>
-            <!--<baleType isRoundBale="true" width="1.2" diameter="1.25">-->
             <baleType isRoundBale="true" width="1.25" diameter="1.25">
                 <nodes baleNode="baleScaleNode" scaleNode="baleScaleNode" scaleComponents="1 1 0"/>
                 <animations fillAnimation="baleFillAnimation" unloadAnimation="unloadBale" dropAnimationTime="4.4"/>
@@ -191,7 +190,7 @@
         </animationNodes>
     </baler>
 
-    <cutter fruitTypes="poplar" fruitTypeConverter="forageHarvester">
+    <cutter fruitTypes="poplar maize wheat barley oat canola sunflower soybean sorghum" fruitTypeConverter="forageHarvester">
         <fillEffect>
             <effectNode effectClass="ParticleEffect" effectNode="emitterShapePoplarChips" particleType="CRUSHER_WOOD" emitCountScale="20.0" useCuttingWidth="false"/>
             <effectNode effectClass="ParticleEffect" effectNode="emitterShapeSmoke"       particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.7" useCuttingWidth="false"/>
@@ -335,7 +334,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="woodChips" capacity="2000" showInShop="false">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="woodChips chaff" capacity="2000" showInShop="false">
                         <alarmTriggers>
                             <alarmTrigger minFillLevel="0.86" maxFillLevel="1" needsTurnOn="true">
                                 <alarmSound template="ROLLBELT_ALARM" linkNode="wb55_main_component1" />
