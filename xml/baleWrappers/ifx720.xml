@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="inlineWrapper" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>IFX720 XTRACTOR</name>
+        <specs>
+            <power>13</power>
+            <fillTypes>roundBale_grass</fillTypes>
+        </specs>
+        <functions>
+            <function>$l10n_function_baleWrapper</function>
+            <function>$l10n_function_inlineWrapper</function>
+        </functions>
+        <image>$data/vehicles/andersonGroup/ifx720/store_ifx720.png</image>
+        <price>30000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>ANDERSONGROUP</brand>
+        <category>baleWrappers</category>
+        <shopTranslationOffset>0 -0.005 0</shopTranslationOffset>
+        <shopRotationOffset>-0.356 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>2006016</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>327168</indexBufferMemoryUsage>
+        <textureMemoryUsage>3866624</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_baleWrapper</typeDesc>
+        <filename>$data/vehicles/andersonGroup/ifx720/ifx720.i3d</filename>
+        <sounds filename="$data/vehicles/andersonGroup/hybridX/sounds/inlineWrapper.xml"/>
+        <size width="3.8" length="6.5" lengthOffset="0.45"/>
+        <components>
+            <component centerOfMass="0 0.65 0.5" solverIterationCount="10" mass="2020" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="OTHER"/>
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T510/215_65R15.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="1" restLoad="0.5" repr="backWheelLeftAxis"  driveNode="backWheelLeft"  useReprDirection="true" forcePointRatio="0.5" initialCompression="12" suspTravel="0.2" spring="20" damper="20" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T510/215_65R15.xml" isLeft="true"  hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="1" restLoad="0.5" repr="backWheelRightAxis" driveNode="backWheelRight" useReprDirection="true" forcePointRatio="0.5" initialCompression="12" suspTravel="0.2" spring="20" damper="20" />
+                    </wheel>
+
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T421/280_60R15_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0" restLoad="0.6" repr="frontWheelLeft"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.1" spring="25" damper="20" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T421/280_60R15_5.xml" isLeft="false"  hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0" restLoad="0.6" repr="frontWheelRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.1" spring="25" damper="20" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <rimColor material="18">SHARED_WHITE1</rimColor>
+
+        <hubs>
+            <color0>ANDERSONGROUP_RED1</color0>
+            <color1>SHARED_GREY3</color1>
+            <hub linkNode="backWheelLeft"   filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.1 0.14 0.14" />
+            <hub linkNode="backWheelRight"  filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true"  scale="0.1 0.14 0.14" />
+            <hub linkNode="frontWheelLeft"  filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true"  scale="0.12 0.16 0.16" />
+            <hub linkNode="frontWheelRight" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.12 0.16 0.16" />
+        </hubs>
+
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="40" rotMax="37" rotCenterWheel1="3" rotCenterWheel2="4" />
+        </ackermannSteeringConfigurations>
+    </wheels>
+
+    <speedRotatingParts>
+        <speedRotatingPart node="frontWheelGearBig"   wheelIndex="3" wheelScale="1"/>
+        <speedRotatingPart node="frontWheelGearSmall" wheelIndex="3" wheelScale="5"/>
+        <speedRotatingPart shaderNode="frontWheelChain" wheelIndex="3" wheelScale="-5" useRotation="false" scrollScale="0 1"/>
+    </speedRotatingParts>
+
+    <enterable isTabbable="false" >
+        <enterReferenceNode node="ifx720_main_component1" />
+        <exitPoint node="exitPoint" />
+
+        <cameras>
+            <camera node="outdoorCamera" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="4" transMax="40" translation="0 0 5.2" rotation="-25 180 0" >
+                <raycastNode node="cameraRaycastNode1" />
+                <raycastNode node="cameraRaycastNode2" />
+                <raycastNode node="cameraRaycastNode3" />
+            </camera>
+        </cameras>
+
+         <forceSelectionOnEnter>true</forceSelectionOnEnter>
+    </enterable>
+
+    <motorized>
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.7" wheelIndex1="3" wheelIndex2="4" />
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+
+        <motorConfigurations>
+            <motorConfiguration name="IFX720 XTRACTOR" hp="13" price="0">
+                <motor torqueScale="0.1" minRpm="1000" maxRpm="2200" minSpeed="0.01" maxForwardSpeed="5" maxBackwardSpeed="5" brakeForce="0.1" lowBrakeForceScale="0.22" rotInertia="0.001">
+                    <torque normRpm="0.45" torque="0.9"/>
+                    <torque normRpm="0.5"  torque="0.97"/>
+                    <torque normRpm="0.59" torque="1"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1"    torque="0.72"/>
+                </motor>
+                <transmission minForwardGearRatio="145" maxForwardGearRatio="150" minBackwardGearRatio="145" maxBackwardGearRatio="150" />
+            </motorConfiguration>
+        </motorConfigurations>
+    </motorized>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="trailer" attacherHeight="0.5" foldMinLimit="0" foldMaxLimit="0.01" allowFolding="false"/>
+        </inputAttacherJoints>
+        <brakeForce force="0.1"/>
+    </attachable>
+
+    <lights>
+        <sharedLight linkNode="workingLightSquare_04" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight11.xml" />
+        <sharedLight linkNode="workingLightSquare_01" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight08.xml" />
+        <sharedLight linkNode="rearLightOvalLEDOrange_02" filename="$data/shared/assets/lights/lizard/rearLight23Orange_left.xml" />
+        <sharedLight linkNode="rearLightOvalLEDOrange_01" filename="$data/shared/assets/lights/lizard/rearLight23Orange_right.xml" />
+        <sharedLight linkNode="rearLightOvalLEDRed_01" filename="$data/shared/assets/lights/lizard/rearLight23Red.xml" />
+        <sharedLight linkNode="rearLightOvalLEDRed_02" filename="$data/shared/assets/lights/lizard/rearLight23Red.xml" />
+        <sharedLight linkNode="bigTriangle" filename="$data/shared/assets/reflectors/lizard/bigTriangle.xml" />
+        <sharedLight linkNode="redRound_03" filename="$data/shared/assets/reflectors/lizard/redRound_03.xml" />
+        <sharedLight linkNode="redRound_04" filename="$data/shared/assets/reflectors/lizard/redRound_03.xml" />
+
+        <states>
+            <state lightTypes="0" />
+            <state lightTypes="0 1" />
+        </states>
+
+        <realLights>
+            <high>
+                <light node="backLightsHigh1" lightTypes="0" />
+                <light node="workLightBack" lightTypes="1" />
+                <light node="workLightBackHigh" lightTypes="1" />
+                <brakeLight node="backLightsHigh1" />
+                <turnLightLeft node="turnLightLeftBack" />
+                <turnLightRight node="turnLightRightBack" />
+            </high>
+        </realLights>
+    </lights>
+
+    <licensePlates>
+        <licensePlate node="licensePlateBack" position="BACK" preferedType="SQUARISH" placementArea="0.14 0.18 0.14 0.18"/>
+    </licensePlates>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="0">
+                    <foldingPart animationName="folding" speedScale="1" />
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+
+    <animations>
+        <animation name="folding">
+            <part node="drawbarAttached"  startTime="0.0" endTime="0.2"  visibility="true" />
+            <part node="drawbarAttached"  startTime="0.2" endTime="0.4"  visibility="false" />
+            <part node="drawbarDetached"  startTime="0.0" endTime="0.2"  visibility="false" />
+            <part node="drawbarDetached"  startTime="0.2" endTime="0.4"  visibility="true" />
+
+            <!-- deactivate attacher joint -->
+            <part node="attacherJoint" startTime="0.0" endTime="0.1" startTrans="0 0.129 3.396" endTrans="0 -100 3.396" />
+
+            <sound template="clackVar6"      startTime="0.1" direction="1"  volumeScale="0.8" pitchScale="0.8" />
+            <sound template="foldStartMed02" startTime="0.1" direction="-1" volumeScale="0.8" pitchScale="1" />
+        </animation>
+
+        <animation name="pusherAnimation">
+            <part node="balePusher"  startTime="0.0" endTime="8.0"  startTrans="0 0 0" endTrans="0 0 1.794" />
+            <part node="balePusher"  startTime="8.0" endTime="12.0"  startTrans="0 0 1.794" endTrans="0 0 0" />
+
+            <sound template="hydraulicLayerTone" startTime="0.01" endTime="11.99" volumeScale="1"   pitchScale="0.7" fadeIn="0.1" fadeOut="0.1" />
+            <sound template="clackVar5"          startTime="0.01" direction="1"   volumeScale="1.3" pitchScale="0.7" />
+            <sound template="clackVar1"          startTime="8"    direction="1"   volumeScale="1"   pitchScale="0.7" />
+            <sound template="foldStopSm01"       startTime="11.8" direction="1"   volumeScale="1.5" pitchScale="0.8" />
+        </animation>
+
+        <animation name="pushOffAnimation">
+            <part node="balePusher2" startTime="0.0" endTime="0.5"  startRot="10.097 0.01 0.0" endRot="2.386 0.01 -0.0" />
+            <part node="balePusher2" startTime="0.5" endTime="1.0"  startRot="2.386 0.01 -0.0" endRot="2.333 0.01 -0.0" />
+            <part node="balePusher2" startTime="1.0" endTime="2.48"  startRot="2.333 0.01 -0.0" endRot="2.942 0.01 0.0" />
+            <part node="balePusher2" startTime="2.48" endTime="4.2"  startRot="2.942 0.01 0.0" endRot="3.673 0.01 0.0" />
+            <part node="balePusher2" startTime="4.2" endTime="10.0"  startRot="3.673 0.01 0.0" endRot="5.5 0.01 0.0" />
+            <part node="balePusher2Part2" startTime="0.0" endTime="10.0"  startTrans="0.0 0.0 0.0" endTrans="0.0 0.0 1.322" />
+            <part node="balePusher2Part3" startTime="0.0" endTime="10.0"  startTrans="0.0 0.0 0.0" endTrans="0.0 0.0 1.506" />
+            <part node="balePusher2Part4" startTime="0.0" endTime="0.5"  startTrans="0.0 0.0 0.0" endTrans="0.0 0.0 0.086" />
+            <part node="balePusher2Part4" startTime="0.5" endTime="10.0"  startTrans="0.0 0.0 0.086" endTrans="-0.0 -0.0 1.492" />
+            <part node="balePusher2Col" startTime="0.0" endTime="10.0"  startTrans="0.0 0.0 0.0" endTrans="0.0 0.2 0.0" />
+
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="9.99" direction="1"  volumeScale="1.3" pitchScale="0.8" fadeIn="0.1" fadeOut="0.1" />
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="9.99" direction="-1" volumeScale="1.3" pitchScale="1.1" fadeIn="0.1" fadeOut="0.1" />
+            <sound template="foldStopSm02"          startTime="0.25"                direction="-1" volumeScale="1.2" pitchScale="0.8" />
+            <sound template="thudVar1"              startTime="0.2"                 direction="-1" volumeScale="0.6" pitchScale="0.5" />
+            <sound template="clackVar1"             startTime="9.99"                direction="1"  volumeScale="0.8" pitchScale="0.9" />
+            <sound template="foldStartMed01"        startTime="0.1"                 direction="1"  volumeScale="0.8" pitchScale="1" />
+        </animation>
+
+        <animation name="wrappingAnimation" looping="true">
+            <part node="wrappingCircle"  startTime="0.0" endTime="3.999" startRot="0 0 0" endRot="0 0 -359.99"/>
+            <part node="wrappingCircle"  startTime="3.999" endTime="4.0" startRot="0 0 -359.99" endRot="0 0 0"/>
+
+            <part node="wrappingWheel"  startTime="0.0" endTime="3.999" startRot="0 0 0" endRot="0 0 -2880"/>
+            <part node="wrappingWheel"  startTime="3.999" endTime="4.0" startRot="0 0 -2880" endRot="0 0 0"/>
+        </animation>
+
+        <animation name="railingsAnimation" resetOnStart="false">
+            <part node="railingLeftCol"   startTime="0.0" endTime="1.0"  startTrans="0.1 1.126 0.17" endTrans="1.1 1.126 0.17" />
+            <part node="railingRightCol"  startTime="0.0" endTime="1.0"  startTrans="-0.1 1.126 0.17" endTrans="-1.1 1.126 0.1" />
+
+            <part node="railingLeft"  startTime="0.45" endTime="0.675"  startRot="0 0 20" endRot="0 0 -15" />
+            <part node="railingRight"  startTime="0.45" endTime="0.675"  startRot="0 0 -20" endRot="0 0 15" />
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="balePusher" playSound="true"/>
+            <movingTool node="balePusher2" playSound="true"/>
+            <movingTool node="balePusher2Part2" playSound="true"/>
+            <movingTool node="balePusher2Part3" playSound="true"/>
+            <movingTool node="balePusher2Part4" playSound="true"/>
+
+            <movingTool node="backWheelLeftAxisAuto" wheelIndices="1"/>
+            <movingTool node="backWheelRightAxisAuto" wheelIndices="2"/>
+
+            <movingTool node="railingLeft">
+                <dependentPart node="railingLeftFrontArm"/>
+                <dependentPart node="railingLeftBackArm"/>
+            </movingTool>
+
+            <movingTool node="railingRight">
+                <dependentPart node="railingRightFrontArm"/>
+                <dependentPart node="railingRightBackArm"/>
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="railingLeftFrontArm" referencePoint="railingLeftFrontArmRef" referenceFrame="railingLeftFrontArmRef"/>
+            <movingPart node="railingLeftBackArm" referencePoint="railingLeftBackArmRef" referenceFrame="railingLeftBackArmRef"/>
+
+            <movingPart node="railingRightFrontArm" referencePoint="railingRightFrontArmRef" referenceFrame="railingRightFrontArmRef"/>
+            <movingPart node="railingRightBackArm" referencePoint="railingRightBackArmRef" referenceFrame="railingRightBackArmRef"/>
+
+            <movingPart node="steeringBar" referencePoint="steeringBarRef" referenceFrame="steeringBarRef" isActiveDirty="true" maxUpdateDistance="50"/>
+            <movingPart node="steeringHydraulic" referencePoint="steeringHydraulicRef" referenceFrame="steeringHydraulicRef" isActiveDirty="true" maxUpdateDistance="50">
+                <translatingPart node="steeringHydraulicPunch" />
+            </movingPart>
+        </movingParts>
+    </cylindered>
+
+    <inlineWrapper>
+        <baleTrigger node="baleTrigger" minFoldTime="1" maxFoldTime="1"/>
+        <wrapTrigger node="wrapTrigger"/>
+        <animations pusher="pusherAnimation" pushOff="pushOffAnimation"/>
+        <pushing brakeForce="0" openBrakeTime="0.1" closeBrakeTime="0.75" minBaleAmount="4"/>
+        <railings animation="railingsAnimation" animStartX="0.1" animEndX="1.1" defaultX="0.9" />
+        <wrapping startNode="wrappingStartNode" />
+
+        <steeringNodes>
+            <steeringNode node="backWheelLeftAxisAuto"/>
+            <steeringNode node="backWheelRightAxisAuto"/>
+        </steeringNodes>
+
+        <baleTypes>
+            <baleType startNode="roundBaleNode125">
+                <size diameter="1.25" width="1.2" />
+                <inlineBale filename="$data/objects/inlineBales/roundbales/inlineBale_round125.xml" />
+                <railing width="0.65"/>
+            </baleType>
+            <baleType startNode="roundBaleNode150">
+                <size diameter="1.50" width="1.2" />
+                <inlineBale filename="$data/objects/inlineBales/roundbales/inlineBale_round150.xml" />
+                <railing width="0.75"/>
+            </baleType>
+            <baleType startNode="roundBaleNode180">
+                <size diameter="1.80" width="1.2" />
+                <inlineBale filename="$data/objects/inlineBales/roundbales/inlineBale_round180.xml" />
+                <railing width="0.90"/>
+            </baleType>
+            <!-- Custom bales -->
+            <baleType startNode="roundBaleNode125">
+                <size diameter="1.25" width="1.25" />
+                <inlineBale filename="$data/objects/inlineBales/roundbales/inlineBale_round125.xml" />
+                <railing width="0.65"/>
+            </baleType>
+            <baleType startNode="roundBaleNode150">
+                <size diameter="1.50" width="1.25" />
+                <inlineBale filename="$data/objects/inlineBales/roundbales/inlineBale_round150.xml" />
+                <railing width="0.75"/>
+            </baleType>
+            <baleType startNode="roundBaleNode180">
+                <size diameter="1.80" width="1.25" />
+                <inlineBale filename="$data/objects/inlineBales/roundbales/inlineBale_round180.xml" />
+                <railing width="0.90"/>
+            </baleType>
+        </baleTypes>
+
+        <wrappingNodes>
+            <wrappingNode node="wrappingNode01" target="wrappingNode01Joint" startTrans="0.015 -0.01 -0.01"/>
+            <wrappingNode node="wrappingNode02" target="wrappingNode02Joint" startTrans="0.015 -0.01 -0.01"/>
+
+            <wrappingNode node="wrappingNode03" target="wrappingNode03Joint" startTrans="0 0 -0.02"/>
+            <wrappingNode node="wrappingNode04" target="wrappingNode04Joint" startTrans="0 0 -0.02"/>
+        </wrappingNodes>
+    </inlineWrapper>
+
+    <wrappingColorConfigurations useDefaultColors="true">
+        <wrappingColorConfiguration name="$l10n_ui_colorWhite" color="SHARED_WRAP_WHITE" price="0" />
+        <wrappingColorConfiguration name="$l10n_ui_colorBlack" color="SHARED_WRAP_BLACK" price="0" />
+        <wrappingColorConfiguration name="$l10n_ui_colorPink"  color="SHARED_WRAP_PINK" price="0" />
+        <wrappingColorConfiguration name="$l10n_ui_colorGreen" color="SHARED_WRAP_GREEN" price="0" />
+        <wrappingColorConfiguration name="$l10n_ui_colorBlue"  color="SHARED_WRAP_BLUE" price="0" />
+        <wrappingColorConfiguration name="$l10n_ui_colorRed"  color="SHARED_RD1" price="0" />
+        <wrappingColorConfiguration name="Kubota" color="KUBOTA_ORANGE1" price="0"/>
+        <wrappingColorConfiguration name="Vermeer" color="VERMEER_YELLOW" price="0"/>
+
+        <material name="wrap_mat" shaderParameter="colorMat0"/>
+        <material name="wrapRolls_mat" shaderParameter="colorMat0"/>
+    </wrappingColorConfigurations>
+
+    <ai>
+        <agentAttachment jointNode="attacherJoint" rotCenterNode="aiAgentAttachmentRotCenter" width="2.8" height="3" length="5" lengthOffset="1.1"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.32" maxX="1.32" minZ="-2.6" maxZ="2.6" yOffset="0.4" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="ifx720_mat" baseNode="ifx720_vis">
+            <shaderParameter name="colorMat0" value="ANDERSONGROUP_RED1"/>
+        </material>
+        <material name="hybridX_mat" baseNode="drawbarDetached">
+            <shaderParameter name="colorMat0" value="ANDERSONGROUP_RED1"/>
+        </material>
+        <material name="wrap_mat" baseNode="wrappingFoil01">
+            <shaderParameter name="colorMat0" value="SHARED_WRAP_WHITE"/>
+        </material>
+        <material name="wrapRolls_mat" baseNode="wrappingFoil03">
+            <shaderParameter name="colorMat0" value="SHARED_WRAP_WHITE"/>
+        </material>
+    </baseMaterial>
+
+    <i3dMappings>
+        <i3dMapping id="ifx720_main_component1" node="0>" />
+        <i3dMapping id="ifx720_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="drawbarDetached" node="0>0|0|1|0" />
+        <i3dMapping id="drawbarAttached" node="0>0|0|1|1" />
+        <i3dMapping id="backWheelLeftAxisAuto" node="0>0|1|0|0" />
+        <i3dMapping id="backWheelLeftAxis" node="0>0|1|0|0|0" />
+        <i3dMapping id="backWheelLeft" node="0>0|1|0|0|0|0" />
+        <i3dMapping id="steeringBarRef" node="0>0|1|0|0|0|1" />
+        <i3dMapping id="backWheelRightAxisAuto" node="0>0|1|1|0" />
+        <i3dMapping id="backWheelRightAxis" node="0>0|1|1|0|0" />
+        <i3dMapping id="backWheelRight" node="0>0|1|1|0|0|0" />
+        <i3dMapping id="steeringBar" node="0>0|1|1|0|0|1" />
+        <i3dMapping id="steeringHydraulicRef" node="0>0|1|1|0|0|1|0" />
+        <i3dMapping id="steeringHydraulic" node="0>0|1|2" />
+        <i3dMapping id="steeringHydraulicPunch" node="0>0|1|2|0" />
+        <i3dMapping id="frontWheelMounting" node="0>0|1|3" />
+        <i3dMapping id="frontWheelLeft" node="0>0|1|3|0" />
+        <i3dMapping id="frontWheelRight" node="0>0|1|3|1" />
+        <i3dMapping id="frontWheelHydraulicRef" node="0>0|1|3|2" />
+        <i3dMapping id="frontWheelGearBig" node="0>0|1|3|3" />
+        <i3dMapping id="frontWheelGearSmall" node="0>0|1|3|4" />
+        <i3dMapping id="frontWheelChain" node="0>0|1|3|5" />
+        <i3dMapping id="frontWheelHydraulic" node="0>0|1|4" />
+        <i3dMapping id="frontWheelHydraulicPunch" node="0>0|1|4|0" />
+        <i3dMapping id="aiAgentAttachmentRotCenter" node="0>0|1|5" />
+        <i3dMapping id="outdoorCameraTarget" node="0>0|2|0" />
+        <i3dMapping id="outdoorCamera" node="0>0|2|0|0" />
+        <i3dMapping id="cameraRaycastNode1" node="0>0|2|1" />
+        <i3dMapping id="cameraRaycastNode2" node="0>0|2|2" />
+        <i3dMapping id="cameraRaycastNode3" node="0>0|2|3" />
+        <i3dMapping id="exitPoint" node="0>0|3" />
+        <i3dMapping id="bigTriangle" node="0>0|4|0|0" />
+        <i3dMapping id="rearLightOvalLEDOrange_01" node="0>0|4|0|1" />
+        <i3dMapping id="rearLightOvalLEDOrange_02" node="0>0|4|0|2" />
+        <i3dMapping id="rearLightOvalLEDRed_01" node="0>0|4|0|3" />
+        <i3dMapping id="rearLightOvalLEDRed_02" node="0>0|4|0|4" />
+        <i3dMapping id="redRound_03" node="0>0|4|0|5" />
+        <i3dMapping id="redRound_04" node="0>0|4|0|6" />
+        <i3dMapping id="workingLightSquare_04" node="0>0|4|0|7" />
+        <i3dMapping id="workingLightSquare_01" node="0>0|4|0|8" />
+        <i3dMapping id="backLightsHigh1" node="0>0|4|1|0" />
+        <i3dMapping id="turnLightLeftBack" node="0>0|4|2|0" />
+        <i3dMapping id="turnLightRightBack" node="0>0|4|2|1" />
+        <i3dMapping id="workLightBack" node="0>0|4|3|0" />
+        <i3dMapping id="workLightBackHigh" node="0>0|4|3|1" />
+        <i3dMapping id="balePusher" node="0>0|5|0|0" />
+        <i3dMapping id="licensePlateBack" node="0>0|5|0|0|0" />
+        <i3dMapping id="balePusher2" node="0>0|5|1" />
+        <i3dMapping id="balePusher2Part2" node="0>0|5|1|0" />
+        <i3dMapping id="balePusher2Part3" node="0>0|5|1|0|0" />
+        <i3dMapping id="balePusher2Part4" node="0>0|5|1|0|0|0" />
+        <i3dMapping id="balePusher2Col" node="0>0|5|1|0|0|0|0" />
+        <i3dMapping id="frontRollers" node="0>0|5|2" />
+        <i3dMapping id="wrappingCircle" node="0>0|5|3|0" />
+        <i3dMapping id="wrappingFoil01" node="0>0|5|3|0|0" />
+        <i3dMapping id="wrappingFoil02" node="0>0|5|3|0|1" />
+        <i3dMapping id="wrappingNode01" node="0>0|5|3|0|5" />
+        <i3dMapping id="wrappingNode01Joint" node="0>0|5|3|0|5|0" />
+        <i3dMapping id="wrappingNode02" node="0>0|5|3|0|6" />
+        <i3dMapping id="wrappingNode02Joint" node="0>0|5|3|0|6|0" />
+        <i3dMapping id="wrappingNode03" node="0>0|5|3|0|7" />
+        <i3dMapping id="wrappingNode03Joint" node="0>0|5|3|0|7|0" />
+        <i3dMapping id="wrappingNode04" node="0>0|5|3|0|8" />
+        <i3dMapping id="wrappingNode04Joint" node="0>0|5|3|0|8|0" />
+        <i3dMapping id="wrappingFoil03" node="0>0|5|3|0|9" />
+        <i3dMapping id="wrappingFoil04" node="0>0|5|3|0|10" />
+        <i3dMapping id="wrappingWheel" node="0>0|5|4|0" />
+        <i3dMapping id="inlineWrapper" node="0>0|6" />
+        <i3dMapping id="baleTrigger" node="0>0|6|0" />
+        <i3dMapping id="wrapTrigger" node="0>0|6|1" />
+        <i3dMapping id="roundBaleNode125" node="0>0|6|2|0" />
+        <i3dMapping id="roundBaleNode150" node="0>0|6|2|1" />
+        <i3dMapping id="roundBaleNode180" node="0>0|6|2|2" />
+        <i3dMapping id="railingLeftCol" node="0>0|6|3" />
+        <i3dMapping id="railingRightCol" node="0>0|6|4" />
+        <i3dMapping id="wrappingStartNode" node="0>0|6|5" />
+        <i3dMapping id="railingLeft" node="0>0|6|6|0" />
+        <i3dMapping id="railingLeftFrontArm" node="0>0|6|6|0|0" />
+        <i3dMapping id="railingLeftBackArm" node="0>0|6|6|0|1" />
+        <i3dMapping id="railingLeftFrontArmRef" node="0>0|6|6|0|2" />
+        <i3dMapping id="railingLeftBackArmRef" node="0>0|6|6|0|3" />
+        <i3dMapping id="railingRight" node="0>0|6|7|0" />
+        <i3dMapping id="railingRightFrontArm" node="0>0|6|7|0|0" />
+        <i3dMapping id="railingRightBackArm" node="0>0|6|7|0|1" />
+        <i3dMapping id="railingRightFrontArmRef" node="0>0|6|7|0|2" />
+        <i3dMapping id="railingRightBackArmRef" node="0>0|6|7|0|3" />
+    </i3dMappings>
+</vehicle>

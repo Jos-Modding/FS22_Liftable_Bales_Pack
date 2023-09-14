@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<bale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/bale.xsd">
+    <filename>$data/objects/roundbales/biomass/biomassBale125.i3d</filename>
+    <size isRoundbale="true" width="1.25" diameter="1.25"/>
+    <mountableObject triggerNode="0" forceAcceleration="10" forceLimitScale="1" axisFreeY="false" axisFreeX="false"/>
+
+    <uvId>DEFAULT</uvId>
+
+    <baleMeshes>
+        <baleMesh node="1" supportsWrapping="true" isTensionBeltMesh="true"/>
+        <baleMesh node="1|0" supportsWrapping="false"/>
+    </baleMeshes>
+
+    <fillTypes>
+        <fillType name="woodChips" capacity="2000" mass="100" supportsWrapping="false">
+            <diffuse filename="$data/objects/roundbales/biomass/biomassBale125_diffuse.dds"/>
+            <normal filename="$data/objects/roundbales/biomass/biomassBale125_normal.dds"/>
+            <specular filename="$data/objects/roundbales/biomass/biomassBale125_specular.dds"/>
+        </fillType>
+    </fillTypes>
+</bale>

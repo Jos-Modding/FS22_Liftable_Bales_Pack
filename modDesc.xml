@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="73">
+	<author>Jos</author>
+    <version>1.1.0.0</version>
+	<title>
+        <en>Liftable Bales Pack</en>
+        <de>Anhebbare Ballen Paket</de>
+    </title>
+    <description>
+		<en>
+<![CDATA[
+All basegame balers and cotton harvesters has been modified to produce bales weighing only 100 kg, thus making them liftable!
+This pack includes trailers to transport these lightweight bales.
+
+== Balers ==
+Anderson Group BioBaler WB-55
+- Price: 99500 €
+- Bales: round 125 cm
+
+Case IH LB436 H
+- Price: 159500 €
+- Bales: square 180/220/240 cm
+
+Claas ROLLANT 455 RC UNIWRAP
+- Price: 78500 €
+- Bales: round 125 cm
+
+Claas QUADRANT 5300 FC
+- Price: 153500 €
+- Bales: square 180/220/240 cm
+
+Krone BiG Pack 1290 HDP VC
+- Price: 155000 €
+- Bales: square 180/220/240 cm
+
+Kuhn VB 3190
+- Price: 57500 €
+- Bales: round 125/150/180 cm
+
+Kuhn SB 1290 iD
+- Price: 164000 €
+- Bales: square 180/220/240 cm
+
+New Holland BigBaler 1290 High Density
+- Price: 159500 €
+- Bales: square 180/220/240 cm
+
+Poettinger IMPRESS 125F PRO
+- Price: 48000 €
+- Bales: round 125 cm
+
+Poettinger IMPRESS 185VC PRO
+- Price: 99500 €
+- Bales: round 125/150/180 cm
+
+== Cotton harvesters ==
+Case IH Module Express 635
+- Price: 485000 €
+- Bales: cotton round 10000 liter
+
+John Deere CP690
+- Price: 847000 €
+- Bales: cotton square 20000 liter
+
+== Bale wrappers ==
+Anderson Group HYBRID X XTRACTOR
+- Price: 34900 €
+- Bales: all square and round
+
+Anderson Group IFX720 XTRACTOR
+- Price: 30000 €
+- Bales: round 125/150/180 cm
+
+Kuhn SW 4014
+- Price: 54000 €
+- Bales: round 125/150 cm
+
+Kverneland 7850 C
+- Price: 22000 €
+- Bales: round 125/150 cm
+
+== Trailers ==
+Farmtech DPW 1800 autoloader
+- Price: 19500 €
+- Bales: all square and round
+
+McCormack Cotton Tag Trailer
+- Price: 89000 €
+- Bales: cotton round 10000 liter
+
+Arcusin ForStack 8.12
+- Price 37000 €
+- Bales: square 180/220/240 cm
+
+Arcusin FSX 63.72
+- Price: 90000 €
+- Bales: square 180/220/240 cm
+
+Lizard Module 4
+- Price: 26000 €
+- Bales: cotton square and round
+
+Lizard Module X Semi
+- Price: 46000 €
+- Bales: cotton square and round
+
+Anderson Group RBM2000
+- Price 50500 €
+- Bales: round 125/150/180 cm
+
+Changelog 1.1.0.0
+- Added buyable forage, chaff, and sugarbeet cut bales
+- Set fixed prices based on bale size
+
+Changelog 1.0.2.0
+- Added buyable liftable bales
+- Added Kubota and Vermeer wrapping colours
+
+Changelog 1.0.1.0
+- Added bale trailers for custom bales
+- Added bale wrappers for custom bales (with more colours!)
+- Added DPW1800 autoload trailer
+]]>
+		</en>
+		<de>
+<![CDATA[
+Alle Ballenpressen und Baumwollerntemaschinen des Basisspiels wurden modifiziert, um Ballen mit einem Gewicht von nur 100 kg zu produzieren, wodurch sie angehoben werden können!
+Dieses Paket enthält Anhänger zum Transport dieser leichten Ballen.
+
+== Ballenpressen ==
+Anderson Group BioBaler WB-55
+- Preis: 99500 €
+- Ballen: runden 125 cm
+
+Case IH LB436 H
+- Preis: 159500 €
+- Ballen: rechteckig 180/220/240 cm
+
+Claas ROLLANT 455 RC UNIWRAP
+- Preis: 78500 €
+- Ballen: runden 125 cm
+
+Claas QUADRANT 5300 FC
+- Preis: 153500 €
+- Ballen: rechteckig 180/220/240 cm
+
+Krone BiG Pack 1290 HDP VC
+- Preis: 155000 €
+- Ballen: rechteckig 180/220/240 cm
+
+Kuhn VB 3190
+- Preis: 57500 €
+- Ballen: runden 125/150/180 cm
+
+Kuhn SB 1290 iD
+- Preis: 164000 €
+- Ballen: rechteckig 180/220/240 cm
+
+New Holland BigBaler 1290 High Density
+- Preis: 159500 €
+- Ballen: rechteckig 180/220/240 cm
+
+Poettinger IMPRESS 125F PRO
+- Preis: 48000 €
+- Ballen runden 125 cm
+
+Poettinger IMPRESS 185VC PRO
+- Preis: 99500 €
+- Ballen: runden 125/150/180 cm
+
+== Baumwolle Mähdrescher ==
+Case IH Module Express 635
+- Preis: 485000 €
+- Ballen: Baumwolle runden 10000 liter
+
+John Deere CP690
+- Preis: 847000 €
+- Ballen: Baumwolle rechteckig 20000 liter
+
+== Bale wrappers ==
+Anderson Group HYBRID X XTRACTOR
+- Preis: 34900 €
+- Ballen: runden und rechtecking
+
+Anderson Group IFX720 XTRACTOR
+- Preis: 30000 €
+- Ballen: runden 125/150/180 cm
+
+Kuhn SW 4014
+- Preis: 54000 €
+- Ballen: runden 125/150 cm
+
+Kverneland 7850 C
+- Preis: 22000 €
+- Ballen: runden 125/150 cm
+
+== Trailers ==
+Farmtech DPW 1800 autoloader
+- Preis: 19500 €
+- Ballen: runden und rechtecking
+
+McCormack Cotton Tag Trailer
+- Preis: 89000 €
+- Ballen: Baumwolle runden 10000 liter
+
+Arcusin ForStack 8.12
+- Preis 37000 €
+- Ballen: rechtecking 180/220/240 cm
+
+Arcusin FSX 63.72
+- Preis: 90000 €
+- Ballen: rechtecking 180/220/240 cm
+
+Lizard Module 4
+- Preis: 26000 €
+- Ballen: Baumwolle runden und rechtecking
+
+Lizard Module X Semi
+- Preis: 46000 €
+- Ballen: Baumwolle runden und rechtecking
+
+Anderson Group RBM2000
+- Preis 50500 €
+- Ballen: runden 125/150/180 cm
+
+Änderungsprotokoll 1.1.0.0
+- Kaufbares Mischration, Häckselgut und Zuckerrübenschnitzel Ballen hinzugefügt
+- Legen Sie Festpreise basierend auf der Ballengröße fest
+
+Änderungsprotokoll 1.0.2.0
+- kaufbare hebbare Ballen hinzugefügt
+- Kubota- und Vermeer-Verpackungsfarben hinzugefügt
+
+Änderungsprotokoll 1.0.1.0
+- Ballenanhänger für benutzerdefinierte Ballen hinzugefügt
+- Ballenwickler für benutzerdefinierte Ballen hinzugefügt (mit mehr Farben!)
+- DPW1800 Autoload-Anhänger hinzugefügt
+]]>
+		</de>
+    </description>
+	<multiplayer supported="true" />
+	<iconFilename>icon_liftableBalesPack.dds</iconFilename>
+	<bales>
+		<bale filename="xml/biomass/biomassBale125.xml" />
+		<bale filename="xml/cottonModules/cottonRoundbale238.xml" />
+		<bale filename="xml/cottonModules/cottonSquarebale488.xml" />
+		<bale filename="xml/roundbales/roundbale125.xml" />
+		<bale filename="xml/roundbales/roundbale150.xml" />
+		<bale filename="xml/roundbales/roundbale180.xml" />
+		<bale filename="xml/squarebales/squarebale180.xml" />
+		<bale filename="xml/squarebales/squarebale220.xml" />
+		<bale filename="xml/squarebales/squarebale240.xml" />
+	</bales>
+	<storeItems>
+		<!-- Balers -->
+		<storeItem xmlFilename="xml/bigBaler1290HD.xml" />
+		<storeItem xmlFilename="xml/bigPack1290HDPVC.xml" />
+		<storeItem xmlFilename="xml/bioBalerWB55.xml" />
+		<storeItem xmlFilename="xml/impress125FPro.xml" />
+		<storeItem xmlFilename="xml/impress185VCPro.xml" />
+		<storeItem xmlFilename="xml/lb436HD.xml" />
+		<storeItem xmlFilename="xml/quadrant5300.xml" />
+		<storeItem xmlFilename="xml/rollant455Uniwrap.xml" />
+		<storeItem xmlFilename="xml/sb1290ID.xml" />
+		<storeItem xmlFilename="xml/vb3190.xml" />
+		<storeItem xmlFilename="xml/cp690.xml" />
+		<storeItem xmlFilename="xml/moduleExpress635.xml" />
+		<!-- Bale wrappers -->
+		<storeItem xmlFilename="xml/baleWrappers/hybridX.xml" />
+		<storeItem xmlFilename="xml/baleWrappers/ifx720.xml" />
+		<storeItem xmlFilename="xml/baleWrappers/sw4014.xml" />
+		<storeItem xmlFilename="xml/baleWrappers/wrapper7850C.xml" />
+		<!-- Trailers -->
+		<storeItem xmlFilename="xml/trailers/cottonTagTrailer.xml" />
+		<storeItem xmlFilename="xml/trailers/dpw1800.xml" />
+		<storeItem xmlFilename="xml/trailers/forstack12.xml" />
+		<storeItem xmlFilename="xml/trailers/fsx6372.xml" />
+		<storeItem xmlFilename="xml/trailers/module4.xml" />
+		<storeItem xmlFilename="xml/trailers/moduleX.xml" />
+		<storeItem xmlFilename="xml/trailers/rbm2000.xml" />
+		<!-- Buyable grass bales -->
+		<storeItem xmlFilename="xml/buyableBales/squarebale180_grass.xml" />
+		<storeItem xmlFilename="xml/buyableBales/squarebale220_grass.xml" />
+		<storeItem xmlFilename="xml/buyableBales/squarebale240_grass.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale125_grass.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale150_grass.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale180_grass.xml" />
+		<!-- Buyable hay bales -->
+		<storeItem xmlFilename="xml/buyableBales/squarebale180_dryGrass.xml" />
+		<storeItem xmlFilename="xml/buyableBales/squarebale220_dryGrass.xml" />
+		<storeItem xmlFilename="xml/buyableBales/squarebale240_dryGrass.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale125_dryGrass.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale150_dryGrass.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale180_dryGrass.xml" />
+		<!-- Buyable straw bales -->
+		<storeItem xmlFilename="xml/buyableBales/squarebale180_straw.xml" />
+		<storeItem xmlFilename="xml/buyableBales/squarebale220_straw.xml" />
+		<storeItem xmlFilename="xml/buyableBales/squarebale240_straw.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale125_straw.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale150_straw.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale180_straw.xml" />
+		<!-- Buyable silage bales -->
+		<storeItem xmlFilename="xml/buyableBales/squarebale180_silage.xml" />
+		<storeItem xmlFilename="xml/buyableBales/squarebale220_silage.xml" />
+		<storeItem xmlFilename="xml/buyableBales/squarebale240_silage.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale125_silage.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale150_silage.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale180_silage.xml" />
+		<!-- Buyable forage bales -->
+		<storeItem xmlFilename="xml/buyableBales/roundbale125_forage.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale150_forage.xml" />
+		<!-- Buyable chaff bales -->
+		<storeItem xmlFilename="xml/buyableBales/roundbale125_chaff.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale150_chaff.xml" />
+		<!-- Buyable sugarBeetCut bales -->
+		<storeItem xmlFilename="xml/buyableBales/roundbale125_sugarBeetCut.xml" />
+		<storeItem xmlFilename="xml/buyableBales/roundbale150_sugarBeetCut.xml" />
+	</storeItems>
+	<brands>
+		<brand title="Lizard Goods" name="LIZARDGOODS" image="$data/store/brands/brand_lizardGoods.dds"/>
+	</brands>
+</modDesc>

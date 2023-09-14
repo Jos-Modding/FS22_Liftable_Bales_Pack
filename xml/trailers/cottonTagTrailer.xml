@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="baleLoader" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Cotton Tag Trailer</name>
+        <functions>
+            <function>$l10n_function_baleStacker</function>
+        </functions>
+        <image>$data/vehicles/mcCormack/cottonTagTrailer/store_cottonTagTrailer.png</image>
+        <price>89000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>MCCORMACK</brand>
+        <category>cottonHarvesting</category>
+        <shopTranslationOffset>0 0.276 0</shopTranslationOffset>
+        <shopRotationOffset>-0.342 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>1251072</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>211200</indexBufferMemoryUsage>
+        <textureMemoryUsage>3080192</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_baleLoader</typeDesc>
+        <filename>$data/vehicles/mcCormack/cottonTagTrailer/cottonTagTrailer.i3d</filename>
+        <size width="4.7" length="11.5" lengthOffset="2" widthOffset="-0.4"/>
+        <components>
+            <component centerOfMass="0 0.35 0.6" solverIterationCount="10" mass="2500"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <sounds volumeFactor="1.1"/>
+        <mapHotspot type="TRAILER" />
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG" saveId="TRELLEBORG_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelFrontLeft" forcePointRatio="0.3" initialCompression="25" suspTravel="0.15" spring="16" damper="10" yOffset="-0.015"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelFrontRight" forcePointRatio="0.3" initialCompression="25" suspTravel="0.15" spring="16" damper="10" yOffset="-0.015"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelBackLeft" forcePointRatio="0.3" initialCompression="25" suspTravel="0.15" spring="16" damper="10"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelBackRight" forcePointRatio="0.3" initialCompression="25" suspTravel="0.15" spring="16" damper="10"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.2" repr="supportWheelRight" forcePointRatio="0.2" initialCompression="30" suspTravel="0.1" spring="10" damper="30" brakeFactor="0" yOffset="-0.005"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="MICHELIN" saveId="MICHELIN_DEFAULT">
+                <wheels baseConfig="TRELLEBORG_DEFAULT">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="-0.009"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="-0.009"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="0.006"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="0.006"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml"/>
+                </wheels>
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="BKT" saveId="BKT_DEFAULT">
+                <wheels baseConfig="TRELLEBORG_DEFAULT">
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml"/>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml"/>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml"/>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml"/>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml"/>
+                </wheels>
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="VREDESTEIN" saveId="VREDESTEIN_DEFAULT">
+                <wheels baseConfig="MICHELIN_DEFAULT">
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/560_45R22_5.xml"/>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/560_45R22_5.xml"/>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/560_45R22_5.xml"/>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/560_45R22_5.xml"/>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/560_45R22_5.xml"/>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <dynamicallyLoadedWheels>
+            <dynamicallyLoadedWheel linkNode="wheelVis01" filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="false" color="0.294 0.294 0.294" />
+            <dynamicallyLoadedWheel linkNode="wheelVis02" filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="true"  color="0.294 0.294 0.294" />
+            <dynamicallyLoadedWheel linkNode="wheelVis03" filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="false" color="0.294 0.294 0.294" />
+            <dynamicallyLoadedWheel linkNode="wheelVis04" filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="true"  color="0.294 0.294 0.294" />
+            <dynamicallyLoadedWheel linkNode="wheelVis05" filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="false" color="0.294 0.294 0.294" />
+            <dynamicallyLoadedWheel linkNode="wheelVis06" filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="true"  color="0.294 0.294 0.294" />
+            <dynamicallyLoadedWheel linkNode="wheelVis07" filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="false" color="0.294 0.294 0.294" />
+            <dynamicallyLoadedWheel linkNode="wheelVis08" filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="true"  color="0.294 0.294 0.294" />
+            <dynamicallyLoadedWheel linkNode="wheelVis09" filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="true"  color="0.294 0.294 0.294" />
+            <dynamicallyLoadedWheel linkNode="wheelVis10" filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="true"  color="0.294 0.294 0.294" />
+            <dynamicallyLoadedWheel linkNode="wheelVis11" filename="$data/shared/wheels/tires/trelleborg/T510/16x6_50R8.xml" isLeft="true"  color="0.294 0.294 0.294" />
+        </dynamicallyLoadedWheels>
+
+        <hubs>
+            <color0 useBaseColor="true"/>
+            <hub linkNode="wheelFrontLeft"    filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="true"  scale="0.25 0.3 0.3">
+                <color1>SHARED_GREY3</color1>
+            </hub>
+            <hub linkNode="wheelFrontRight"   filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="false" scale="0.25 0.3 0.3">
+                <color1>SHARED_GREY3</color1>
+            </hub>
+            <hub linkNode="wheelBackLeft"     filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="true"  scale="0.25 0.3 0.3">
+                <color1>SHARED_GREY3</color1>
+            </hub>
+            <hub linkNode="wheelBackRight"    filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="false" scale="0.25 0.3 0.3">
+                <color1>SHARED_GREY3</color1>
+            </hub>
+            <hub linkNode="supportWheelRight" filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="false" scale="0.25 0.3 0.3">
+                <color1>SHARED_GREY3</color1>
+            </hub>
+
+            <hub linkNode="wheelVis01"          filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="false" scale="0.15 0.15 0.15" offset="-0.015">
+                <color0>0.295 0.295 0.295</color0>
+            </hub>
+            <hub linkNode="wheelVis02"          filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="true"  scale="0.15 0.15 0.15" offset="-0.015">
+                <color0>0.295 0.295 0.295</color0>
+            </hub>
+            <hub linkNode="wheelVis03"          filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="true"  scale="0.15 0.15 0.15" offset="-0.015">
+                <color0>0.295 0.295 0.295</color0>
+            </hub>
+            <hub linkNode="wheelVis04"          filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="true"  scale="0.15 0.15 0.15" offset="-0.015">
+                <color0>0.295 0.295 0.295</color0>
+            </hub>
+            <hub linkNode="wheelVis05"          filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="true"  scale="0.15 0.15 0.15" offset="-0.015">
+                <color0>0.295 0.295 0.295</color0>
+            </hub>
+            <hub linkNode="wheelVis06"          filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="true"  scale="0.15 0.15 0.15" offset="-0.015">
+                <color0>0.295 0.295 0.295</color0>
+            </hub>
+            <hub linkNode="wheelVis07"          filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="true"  scale="0.15 0.15 0.15" offset="-0.015">
+                <color0>0.295 0.295 0.295</color0>
+            </hub>
+            <hub linkNode="wheelVis08"          filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="true"  scale="0.15 0.15 0.15" offset="-0.015">
+                <color0>0.295 0.295 0.295</color0>
+            </hub>
+            <hub linkNode="wheelVis09"          filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="false" scale="0.15 0.15 0.15" offset="-0.015">
+                <color0>0.295 0.295 0.295</color0>
+            </hub>
+            <hub linkNode="wheelVis10"          filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="false" scale="0.15 0.15 0.15" offset="-0.015">
+                <color0>0.295 0.295 0.295</color0>
+            </hub>
+            <hub linkNode="wheelVis11"          filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="false" scale="0.15 0.15 0.15" offset="-0.015">
+                <color0>0.295 0.295 0.295</color0>
+            </hub>
+        </hubs>
+    </wheels>
+
+    <licensePlates>
+        <licensePlate node="licensePlateBack" position="BACK" preferedType="SQUARISH" placementArea="0.09 0.20 0.09 0.20"/>
+    </licensePlates>
+
+    <rimColorConfigurations useDefaultColors="true" price="50">
+        <rimColorConfiguration name="$l10n_configuration_valueDefault" color="SHARED_WHITE1" material="18"/>
+    </rimColorConfigurations>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="trailerLow" attacherHeight="0.69" />
+        </inputAttacherJoints>
+        <support animationName="moveSupport" />
+        <brakeForce force="0.5"/>
+    </attachable>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn01"  length="2.1" diameter="0.015" minCenterPointOffset="0 0.01 0" maxCenterPointOffset="0 0 0">
+            <objectChange node="hydraulicIn01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut01" length="2.1" diameter="0.015" minCenterPointOffset="0 0.01 0" maxCenterPointOffset="0 0 0">
+            <objectChange node="hydraulicOut01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn02"  length="2.1" diameter="0.015" minCenterPointOffset="0 0.01 0" maxCenterPointOffset="0 0 0">
+            <objectChange node="hydraulicIn02_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+    </connectionHoses>
+
+    <powerConsumer ptoRpm="275" neededMinPtoPower="10" neededMaxPtoPower="10"/>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="1|0" linkNode="hydraulicIn01_connector"   filename="$data/shared/connectionHoses/connectors.i3d" />
+        <dynamicallyLoadedPart node="1|0" linkNode="hydraulicOut01_connector"   filename="$data/shared/connectionHoses/connectors.i3d" />
+        <dynamicallyLoadedPart node="1|0" linkNode="hydraulicIn02_connector"   filename="$data/shared/connectionHoses/connectors.i3d" />
+    </dynamicallyLoadedParts>
+
+    <animations>
+        <animation name="baleGrabberTransportToWork">
+            <part node="rotArm04" startTime="0"   endTime="1"   startRot="0 0 18" endRot="0 0 50"/>
+            <part node="wheelArm" startTime="1"   endTime="3.5" startRot="0 0 0"  endRot="0 0 98"/>
+            <part node="rotArm01" startTime="1"   endTime="3.5" startRot="0 0 0"  endRot="0 -90 0"/>
+            <part node="rotArm02" startTime="3.5" endTime="6"   startRot="0 0 0"  endRot="45 0 0"/>
+            <part node="rotArm03" startTime="3.5" endTime="6"   startRot="0 0 0"  endRot="-45 0 0"/>
+            <part node="rotArm04" startTime="6"   endTime="6.5" startRot="0 0 50" endRot="0 0 85"/>
+
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="1"    volumeScale="1.7" pitchScale="1.5" fadeIn="0.1" fadeOut="0.2"/>
+            <sound template="defaultHydraulicSound" startTime="1"    endTime="6"    volumeScale="1.7" pitchScale="0.6" fadeIn="0.1" fadeOut="0.2"/>
+            <sound template="defaultHydraulicSound" startTime="1"    endTime="3.5"  volumeScale="1.7" pitchScale="1"   fadeIn="0.1" fadeOut="0.2"/>
+            <sound template="defaultHydraulicSound" startTime="6"    endTime="6.5"  volumeScale="1.7" pitchScale="1.5" fadeIn="0.1" fadeOut="0.2"/>
+            <sound template="clackVar1"             startTime="0.8"  direction="1"  volumeScale="1"   pitchScale="1.5"/>
+            <sound template="hingeSmall"            startTime="1"    direction="1"  volumeScale="0.5" pitchScale="0.3"/>
+            <sound template="sheetImp02"            startTime="1.1"  direction="1"  volumeScale="1.4" pitchScale="0.6"/>
+            <sound template="sheetImp02"            startTime="3.4"  direction="1"  volumeScale="3"   pitchScale="0.8"/>
+            <sound template="clackVar6"             startTime="3.4"  direction="1"  volumeScale="1"   pitchScale="0.8"/>
+            <sound template="thudVar2"              startTime="6"    direction="1"  volumeScale="1"   pitchScale="1.5"/>
+            <sound template="clackVar1"             startTime="5.8"  direction="1"  volumeScale="1"   pitchScale="0.9"/>
+            <sound template="clackVar1"             startTime="6.45" direction="1"  volumeScale="0.7" pitchScale="2.1"/>
+            <sound template="clackVar1"             startTime="6.1"  direction="-1" volumeScale="0.8" pitchScale="2"/>
+            <sound template="clackVar1"             startTime="6.1"  direction="-1" volumeScale="0.8" pitchScale="0.7"/>
+            <sound template="sheetImp02"            startTime="6.1"  direction="-1" volumeScale="1.3" pitchScale="0.6"/>
+            <sound template="clackVar1"             startTime="6.1"  direction="-1" volumeScale="0.5" pitchScale="0.9"/>
+            <sound template="clackVar6"             startTime="3.5"  direction="-1" volumeScale="1"   pitchScale="0.8"/>
+            <sound template="sheetImp02"            startTime="3.5"  direction="-1" volumeScale="2"   pitchScale="0.8"/>
+            <sound template="sheetImp01"            startTime="1.1"  direction="-1" volumeScale="0.7" pitchScale="0.8"/>
+            <sound template="sheetImp02"            startTime="1.1"  direction="-1" volumeScale="2.2" pitchScale="0.6"/>
+            <sound template="thudVar2"              startTime="1.1"  direction="-1" volumeScale="1.7" pitchScale="0.8"/>
+            <sound template="clackVar6"             startTime="1.1"  direction="-1" volumeScale="1"   pitchScale="1"/>
+            <sound template="clackVar1"             startTime="0.1"  direction="-1" volumeScale="0.5" pitchScale="3"/>
+            <sound template="clackVar6"             startTime="0.1"  direction="-1" volumeScale="1"   pitchScale="0.9"/>
+
+        </animation>
+        <animation name="baleGrabberWorkToDrop" resetOnStart="false">
+            <part node="rotArm04" startTime="0"               endTime="1"   startRot="0 0 85"   endRot="0 0 18"/>
+            <part node="rotArm03" startTime="1"               endTime="2.5" startRot="-45 0 0"  endRot="7.5 0 0"/>
+            <part node="rotArm02" startTime="1"               endTime="2.5" startRot="45 0 0"   endRot="-7.5 0 0"/>
+            <part node="rotArm03" startTime="5"               endTime="6"   startRot="7.5 0 0"  endRot="5 0 0"/>
+            <part node="rotArm02" startTime="5"               endTime="6"   startRot="-7.5 0 0" endRot="-5 0 0"/>
+            <part node="rotArm01" startTime="2"               endTime="5"   startRot="0 -90 0"  endRot="0 0 0"/>
+            <part node="rotArm04" direction="1" startTime="5" endTime="6"   startRot="0 0 18"   endRot="0 0 50"/>
+
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="1"    volumeScale="1.7" pitchScale="1.5"/>
+            <sound template="defaultHydraulicSound" startTime="1"    endTime="5"    volumeScale="1.7" pitchScale="0.6"/>
+            <sound template="defaultHydraulicSound" startTime="5"    endTime="5.99" direction="1"     volumeScale="1.7"/>
+            <sound template="hydraulicLayerTone"    startTime="2"    endTime="5"    volumeScale="1"   pitchScale="0.7"/>
+            <sound template="sheetImp02"            startTime="1.1"  direction="1"  volumeScale="1.4" pitchScale="0.6"/>
+            <sound template="sheetImp02"            startTime="5"    direction="1"  volumeScale="3"   pitchScale="0.8"/>
+            <sound template="clackVar6"             startTime="5"    direction="1"  volumeScale="1"   pitchScale="0.8"/>
+            <sound template="thudVar2"              startTime="6"    direction="1"  volumeScale="1"   pitchScale="1.5"/>
+            <sound template="clackVar1"             startTime="5.8"  direction="1"  volumeScale="1"   pitchScale="0.9"/>
+            <sound template="clackVar1"             startTime="6.45" direction="1"  volumeScale="0.7" pitchScale="2.1"/>
+            <sound template="clackVar1"             startTime="6.1"  direction="-1" volumeScale="0.8" pitchScale="2"/>
+            <sound template="clackVar1"             startTime="6.1"  direction="-1" volumeScale="0.8" pitchScale="0.7"/>
+            <sound template="sheetImp02"            startTime="6.1"  direction="-1" volumeScale="1.3" pitchScale="0.6"/>
+            <sound template="clackVar1"             startTime="6.1"  direction="-1" volumeScale="0.5" pitchScale="0.9"/>
+            <sound template="clackVar6"             startTime="2"    direction="1"  volumeScale="1"   pitchScale="0.8"/>
+            <sound template="sheetImp02"            startTime="2"    direction="1"  volumeScale="2"   pitchScale="0.6"/>
+            <sound template="clackVar6"             startTime="2"    direction="-1" volumeScale="1"   pitchScale="0.8"/>
+            <sound template="sheetImp02"            startTime="2"    direction="-1" volumeScale="2"   pitchScale="0.6"/>
+            <sound template="sheetImp01"            startTime="1.1"  direction="-1" volumeScale="0.7" pitchScale="0.8"/>
+            <sound template="sheetImp02"            startTime="1.1"  direction="-1" volumeScale="2.2" pitchScale="0.6"/>
+            <sound template="thudVar2"              startTime="1.1"  direction="-1" volumeScale="1.7" pitchScale="0.8"/>
+            <sound template="clackVar6"             startTime="1.1"  direction="-1" volumeScale="1"   pitchScale="1"/>
+            <sound template="clackVar1"             startTime="0.1"  direction="-1" volumeScale="0.5" pitchScale="3"/>
+            <sound template="clackVar6"             startTime="0.1"  direction="-1" volumeScale="1"   pitchScale="0.9"/>
+        </animation>
+        <animation name="baleGrabberDropBale" resetOnStart="false">
+            <part node="baleCatcherJoint" startTime="0" endTime="0.1" endTrans="1.882 0.405 0.065" endRot="1.882 0.405 0.065"/>
+        </animation>
+        <animation name="moveBalePlaces">
+            <part node="balePositions"  startTime="0" endTime="10" startTrans="0.006 1.972 10.882" endTrans="0.006 1.972 5.440"/>
+            <part node="uvScroll"       startTime="0" endTime="10" shaderParameter="offsetUV" shaderStartValues="0 0 0 0" shaderEndValues="0 -2 0 0"/>
+            <part node="roller01"       startTime="0" endTime="10" startRot="0 0 0" endRot="-3600 0 0"/>
+            <part node="roller02"       startTime="0" endTime="10" startRot="0 0 0" endRot="-3600 0 0"/>
+
+            <sound template="ROLLBELT_LOOP" startTime="0.01" endTime="9.99" volumeScale="1" pitchScale="1"/>
+        </animation>
+        <animation name="moveBalePlacesToEmpty">
+            <part node="balePositions" startTime="0"     endTime="10" startTrans="0.006 1.972 10.882" endTrans="0.006 1.972 5.440"/>
+            <part node="uvScroll"      startTime="0"     endTime="10" shaderParameter="offsetUV" shaderStartValues="0 0 0 0" shaderEndValues="0 -2 0 0"/>
+            <part node="roller01"      startTime="0"     endTime="10" startRot="0 0 0" endRot="-3600 0 0"/>
+            <part node="roller02"      startTime="0"     endTime="10" startRot="0 0 0" endRot="-3600 0 0"/>
+        </animation>
+        <animation name="rotatePlatform"/>
+        <animation name="moveBalePlacesExtrasOnce"/>
+        <animation name="rotatePlatformEmpty"/>
+        <animation name="moveBalePusherToEmpty"/>
+        <animation name="emptyHidePusher1"/>
+        <animation name="releaseFrontplattform"/>
+        <animation name="closeGrippers"/>
+        <animation name="emptyRotate">
+            <part node="platform" startTime="0" endTime="1.0" startRot="0 0 0" endRot="-10 0 0"/>
+
+            <sound template="hydraulicLayerTone" startTime="0.01" endTime="0.99" volumeScale="1.4" pitchScale="0.6"/>
+            <sound template="clackVar6"          startTime="0.99" direction="1"  volumeScale="1.4" pitchScale="0.6"/>
+            <sound template="cylinderPunch"      startTime="0.99" direction="1"  volumeScale="0.3" pitchScale="1.5"/>
+            <sound template="clackVar6"          startTime="0.01" direction="-1" volumeScale="1.5" pitchScale="0.8"/>
+            <sound template="metalClose"         startTime="0.01" direction="-1" volumeScale="1"   pitchScale="1.5"/>
+            <sound template="cylinderPunch"      startTime="0.01" direction="-1" volumeScale="0.3" pitchScale="1.5"/>
+        </animation>
+        <animation name="moveSupport">
+            <part node="supportArm" startTime="0" endTime="0.5" startTrans="0 0.4 0" endTrans="0 -0.085 0"/>
+            <part node="handle"     startTime="0" endTime="0.5" startRot="0 0 0" endRot="720 0 0"/>
+
+            <sound template="clackVar1" startTime="0.2" volumeScale="2" pitchScale="1" fadeIn="0.1" fadeOut="0.2" linkNode="attacherJoint"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="wheelArm" playSound="true" wheelIndices="5">
+                <dependentPart node="wheelArmHydraulic" />
+            </movingTool>
+            <movingTool node="platform" playSound="true" >
+                <dependentPart node="platformHydraulic" />
+            </movingTool>
+            <movingTool node="rotArm01" playSound="true" >
+                <dependentPart node="rotArm01Hydraulic" />
+            </movingTool>
+            <movingTool node="rotArm02" playSound="true" >
+                <dependentPart node="rotArm02Hydraulic" />
+                <dependentPart node="rotArm02Part" />
+            </movingTool>
+            <movingTool node="rotArm04" playSound="true" >
+                <dependentPart node="rotArm04Hydraulic" />
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="rotArm02Part" referencePoint="rotArm02PartRef" referenceFrame="rotArm02PartRef"/>
+            <movingPart node="wheelArmHydraulic" referencePoint="wheelArmHydraulicRef" referenceFrame="wheelArmHydraulicRef">
+                <translatingPart node="wheelArmHydraulicPunch" />
+            </movingPart>
+            <movingPart node="platformHydraulic" referencePoint="platformHydraulicRef" referenceFrame="platformHydraulicRef">
+                <translatingPart node="platformHydraulicPunch" />
+            </movingPart>
+            <movingPart node="rotArm01Hydraulic" referencePoint="rotArm01HydraulicRef" referenceFrame="rotArm01HydraulicRef">
+                <translatingPart node="rotArm01HydraulicPunch" />
+            </movingPart>
+            <movingPart node="rotArm02Hydraulic" referencePoint="rotArm02HydraulicRef" referenceFrame="rotArm02HydraulicRef">
+                <translatingPart node="rotArm02HydraulicPunch" />
+            </movingPart>
+            <movingPart node="rotArm04Hydraulic" referencePoint="rotArm04HydraulicRef" referenceFrame="rotArm04HydraulicRef">
+                <translatingPart node="rotArm04HydraulicPunch" />
+            </movingPart>
+        </movingParts>
+    </cylindered>
+
+    <baleLoader useBalePlaceAsLoadPosition="true" keepBaleRotationDuringLoad="true">
+        <grabber grabNode="baleCatcherJoint" triggerNode="baleTrigger"/>
+        <balePlaces startBalePlace="baleHelpJoint1" >
+            <balePlace node="baleJoint03" />
+            <balePlace node="baleJoint02" />
+            <balePlace node="baleJoint01" />
+        </balePlaces>
+        <baleTypes>
+            <baleType width="2.38" diameter="2.38" />
+            <baleType width="2.35" diameter="2.38" />
+        </baleTypes>
+        <animations>
+            <baleGrabber dropBaleReverseSpeed="1"/>
+            <releaseFrontPlatform name="releaseFrontplattform" fillLevelSpeed="true"/>
+            <moveBalePlaces moveAfterRotatePlatform="true" emptySpeed="1.5" emptyReverseSpeed="-999999"/>
+        </animations>
+
+        <unloadingMoverNodes trigger="baleLoaderMoveTrigger">
+            <unloadingMoverNode node="platformCollision01" speed="-1" />
+            <unloadingMoverNode node="platformCollision02" speed="-1" />
+            <unloadingMoverNode node="platformCollision03" speed="-1" />
+
+            <animationNodes>
+                <animationNode class="ScrollingAnimation" node="uvScroll" shaderParameterName="offsetUV" shaderParameterComponent="2" scrollLength="7" scrollSpeed="-0.25" turnOnFadeTime="0.25" turnOffFadeTime="1" />
+                <animationNode node="roller01" rotSpeed="-250" rotAxis="1" turnOnFadeTime="0.25" turnOffFadeTime="1" />
+                <animationNode node="roller02" rotSpeed="-250" rotAxis="1" turnOnFadeTime="0.25" turnOffFadeTime="1" />
+            </animationNodes>
+        </unloadingMoverNodes>
+        <sounds>
+            <unload template="ROLLBELT_LOOP"/>
+        </sounds>
+
+    </baleLoader>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_bale" fillTypes="ROUNDBALE_COTTON" capacity="3"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <ai>
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2 3 4" width="3.8" height="4.2" length="9.1" lengthOffset="0.8"/>
+    </ai>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+
+    <foliageBending>
+        <bendingNode minX="-0.5" maxX="0.5" minZ="5.7" maxZ="7.3" yOffset="0.3"/>
+        <bendingNode minX="-1" maxX="1" minZ="1.5" maxZ="5.7" yOffset="0.3"/>
+        <bendingNode minX="-1.4" maxX="1.4" minZ="-1" maxZ="1.5" yOffset="0.3"/>
+        <bendingNode minX="-1" maxX="1" minZ="-3.6" maxZ="-1" yOffset="0.3"/>
+        <bendingNode minX="-1.2" maxX="1.25" minZ="-1.4" maxZ="1.2" yOffset="-0.5" node="rotArm03"/>
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="cottonTagTrailer_mat" baseNode="cottonTagTrailer_vis">
+            <shaderParameter name="colorMat0" value="SHARED_BLACK1"/>
+        </material>
+        <material name="cottonTagTrailerAlpha_mat" baseNode="alpha1">
+            <shaderParameter name="colorMat0" value="SHARED_BLACK1"/>
+        </material>
+        <material name="cottonTagTrailerAlpha_mat" baseNode="alpha2">
+            <shaderParameter name="colorMat0" value="SHARED_BLACK1"/>
+        </material>
+    </baseMaterial>
+
+    <baseMaterialConfigurations useDefaultColors="true" defaultColorIndex="7" price="300">
+        <material name="cottonTagTrailer_mat"       shaderParameter="colorMat0" />
+        <material name="cottonTagTrailerAlpha_mat"  shaderParameter="colorMat0" />
+        <material name="cottonTagTrailerAlpha_mat"  shaderParameter="colorMat0" />
+    </baseMaterialConfigurations>
+
+    <i3dMappings>
+        <i3dMapping id="cottonTagTrailer_main_component1" node="0>" />
+        <i3dMapping id="cottonTagTrailer_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="supportArm" node="0>0|0|1" />
+        <i3dMapping id="supportCol" node="0>0|0|1|0" />
+        <i3dMapping id="handle" node="0>0|0|2" />
+        <i3dMapping id="hydraulicIn01" node="0>0|0|3|0" />
+        <i3dMapping id="hydraulicIn01_detached" node="0>0|0|3|0|0" />
+        <i3dMapping id="hydraulicIn01_connector" node="0>0|0|3|0|0|0" />
+        <i3dMapping id="hydraulicOut01" node="0>0|0|3|1" />
+        <i3dMapping id="hydraulicOut01_detached" node="0>0|0|3|1|0" />
+        <i3dMapping id="hydraulicOut01_connector" node="0>0|0|3|1|0|0" />
+        <i3dMapping id="hydraulicIn02" node="0>0|0|3|2" />
+        <i3dMapping id="hydraulicIn02_detached" node="0>0|0|3|2|0" />
+        <i3dMapping id="hydraulicIn02_connector" node="0>0|0|3|2|0|0" />
+        <i3dMapping id="wheelFrontLeft" node="0>0|1|0" />
+        <i3dMapping id="wheelFrontRight" node="0>0|1|1" />
+        <i3dMapping id="wheelBackLeft" node="0>0|1|2" />
+        <i3dMapping id="wheelBackRight" node="0>0|1|3" />
+        <i3dMapping id="platform" node="0>0|2|0" />
+        <i3dMapping id="rotArm01" node="0>0|2|0|0" />
+        <i3dMapping id="rotArm02" node="0>0|2|0|0|0" />
+        <i3dMapping id="rotArm03" node="0>0|2|0|0|0|0" />
+        <i3dMapping id="rotArm04" node="0>0|2|0|0|0|0|0" />
+        <i3dMapping id="wheelVis01" node="0>0|2|0|0|0|0|0|1" />
+        <i3dMapping id="wheelVis02" node="0>0|2|0|0|0|0|0|2" />
+        <i3dMapping id="rotArm04HydraulicRef" node="0>0|2|0|0|0|0|0|3" />
+        <i3dMapping id="alpha1" node="0>0|2|0|0|0|0|0|4" />
+        <i3dMapping id="rotArm04Hydraulic" node="0>0|2|0|0|0|0|1" />
+        <i3dMapping id="rotArm04HydraulicPunch" node="0>0|2|0|0|0|0|1|0" />
+        <i3dMapping id="rotArm02PartRef" node="0>0|2|0|0|0|0|2" />
+        <i3dMapping id="baleTrigger" node="0>0|2|0|0|0|0|3" />
+        <i3dMapping id="baleCatcherJoint" node="0>0|2|0|0|0|0|4" />
+        <i3dMapping id="rotArm02Part" node="0>0|2|0|0|1" />
+        <i3dMapping id="rotArm02HydraulicRef" node="0>0|2|0|0|1|0" />
+        <i3dMapping id="rotArm02Hydraulic" node="0>0|2|0|0|2" />
+        <i3dMapping id="rotArm02HydraulicPunch" node="0>0|2|0|0|2|0" />
+        <i3dMapping id="rotArm01HydraulicRef" node="0>0|2|0|0|3" />
+        <i3dMapping id="rotArm01Hydraulic" node="0>0|2|0|1" />
+        <i3dMapping id="rotArm01HydraulicPunch" node="0>0|2|0|1|0" />
+        <i3dMapping id="wheelArm" node="0>0|2|0|2" />
+        <i3dMapping id="wheelArmHydraulicRef" node="0>0|2|0|2|0" />
+        <i3dMapping id="supportWheelRight" node="0>0|2|0|2|1|0" />
+        <i3dMapping id="wheelArmHydraulic" node="0>0|2|0|3" />
+        <i3dMapping id="wheelArmHydraulicPunch" node="0>0|2|0|3|0" />
+        <i3dMapping id="uvScroll" node="0>0|2|0|4" />
+        <i3dMapping id="baleHelpJoint1" node="0>0|2|0|5" />
+        <i3dMapping id="bale1Transform" node="0>0|2|0|5|0" />
+        <i3dMapping id="balePositions" node="0>0|2|0|6" />
+        <i3dMapping id="baleJoint01" node="0>0|2|0|6|0" />
+        <i3dMapping id="baleJoint02" node="0>0|2|0|6|1" />
+        <i3dMapping id="baleJoint03" node="0>0|2|0|6|2" />
+        <i3dMapping id="roller01" node="0>0|2|0|7|0" />
+        <i3dMapping id="roller02" node="0>0|2|0|7|1" />
+        <i3dMapping id="roller03" node="0>0|2|0|7|2" />
+        <i3dMapping id="roller04" node="0>0|2|0|7|3" />
+        <i3dMapping id="platformHydraulicRef" node="0>0|2|0|8" />
+        <i3dMapping id="baleLoaderMoveTrigger" node="0>0|2|0|9" />
+        <i3dMapping id="wheelVis03" node="0>0|2|0|10|2|0" />
+        <i3dMapping id="wheelVis04" node="0>0|2|0|10|2|1" />
+        <i3dMapping id="wheelVis05" node="0>0|2|0|10|2|2" />
+        <i3dMapping id="wheelVis06" node="0>0|2|0|10|2|3" />
+        <i3dMapping id="wheelVis07" node="0>0|2|0|10|2|4" />
+        <i3dMapping id="wheelVis08" node="0>0|2|0|10|2|5" />
+        <i3dMapping id="wheelVis09" node="0>0|2|0|10|2|6" />
+        <i3dMapping id="wheelVis10" node="0>0|2|0|10|2|7" />
+        <i3dMapping id="wheelVis11" node="0>0|2|0|10|2|8" />
+        <i3dMapping id="platformCollision01" node="0>0|2|0|11|0" />
+        <i3dMapping id="platformCollision02" node="0>0|2|0|11|1" />
+        <i3dMapping id="platformCollision03" node="0>0|2|0|11|2" />
+        <i3dMapping id="licensePlateBack" node="0>0|2|0|13" />
+        <i3dMapping id="platformHydraulic" node="0>0|2|1" />
+        <i3dMapping id="platformHydraulicPunch" node="0>0|2|1|0" />
+        <i3dMapping id="alpha2" node="0>0|3|0" />
+    </i3dMappings>
+</vehicle>

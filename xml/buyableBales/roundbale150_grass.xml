@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="multipleItemPurchase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/vehicle.xsd">
+    <storeData>
+        <name params="$l10n_fillType_grass">%s 150 cm</name>
+        <specs>
+            <weight minValue="0"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_bales</function>
+        </functions>
+        <image>icons/store_roundbale150_grass.dds</image>
+        <price>1000</price>
+        <lifetime>600</lifetime>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <rotation>0</rotation>
+        <brand>LIZARDGOODS</brand>
+        <category>bales</category>
+        <vertexBufferMemoryUsage>768</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>256</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_storeItem_roundBaleSilage</typeDesc>
+        <filename>$data/objects/buyableBales/buyableBale.i3d</filename>
+        <size width="4" length="4"/>
+        <components>
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="100"/>
+        </components>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="GRASS_WINDROW" capacity="1"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <multipleItemPurchase filename="xml/roundbales/roundbale150.xml" isVehicle="false" fillType="GRASS_WINDROW">
+        <offsets>
+            <offset amount="1" offset="0 0 0.80"/>
+            <offset amount="3" offset="0 0 0"/>
+            <offset amount="5" offset="-0.80 0 0"/>
+        </offsets>
+        <itemPositions>
+            <itemPosition position="0 0.58 -0.80" rotation="-90 0 0"/>
+            <itemPosition position="0 1.75 -0.80" rotation="-90 0 0"/>
+            <itemPosition position="0 0.58 0.80" rotation="-90 0 0"/>
+            <itemPosition position="0 1.75 0.80" rotation="-90 0 0"/>
+            <itemPosition position="1.60 0.58 -0.80" rotation="-90 0 0"/>
+            <itemPosition position="1.60 1.75 -0.80" rotation="-90 0 0"/>
+            <itemPosition position="1.60 0.58 0.80" rotation="-90 0 0"/>
+            <itemPosition position="1.60 1.75 0.80" rotation="-90 0 0"/>
+        </itemPositions>
+    </multipleItemPurchase>
+
+    <multipleItemPurchaseAmountConfigurations>
+        <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="2000"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="3000"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="4000"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="5000"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="6000"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="7000"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="8000"/>
+    </multipleItemPurchaseAmountConfigurations>
+</vehicle>

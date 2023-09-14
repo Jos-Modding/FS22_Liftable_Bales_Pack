@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="baleLoader" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Module X Semi</name>
+        <specs>
+            <combination filterCategory="trucks" />
+            <combination xmlFilename="$data/vehicles/krampe/dolly10L/dolly10L.xml"/>
+            <capacity unitTextOverride="$l10n_unit_bale">2</capacity>
+        </specs>
+        <functions>
+            <function>$l10n_function_baleStacker</function>
+        </functions>
+        <image>$data/vehicles/lizard/moduleX/store_moduleX.png</image>
+        <price>46000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>cottonHarvesting</category>
+        <shopTranslationOffset>0 0.023 0</shopTranslationOffset>
+        <shopRotationOffset>-0.669 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>1101312</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>210176</indexBufferMemoryUsage>
+        <textureMemoryUsage>2752512</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_baleLoader</typeDesc>
+        <filename>$data/vehicles/lizard/moduleX/moduleX.i3d</filename>
+        <size width="4.2" length="16.5" height="4.9" lengthOffset="-0.4" />
+        <components>
+            <component centerOfMass="0 0.85 0" solverIterationCount="10" mass="4400" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <sounds volumeFactor="1.3" />
+        <mapHotspot type="TRAILER" />
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="CONTINENTAL" saveId="CONTINENTAL_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/_13R22_5.xml" configId="dual" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.0" repr="wheelFrontLeft"  forcePointRatio="0.46" initialCompression="20" suspTravel="0.17" spring="23" damper="50" frictionScale="2" yOffset="0"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/_13R22_5.xml" configId="dualRim" isLeft="true" offset="0.1" />
+                        <wheelChock parkingNode="wheelChock01" />
+                        <wheelChock parkingNode="wheelChock02" isInverted="true" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/_13R22_5.xml" configId="dual" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.0" repr="wheelFrontRight" forcePointRatio="0.46" initialCompression="20" suspTravel="0.17" spring="23" damper="50" frictionScale="2" yOffset="0"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/_13R22_5.xml" configId="dualRim" isLeft="false" offset="0.1" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/_13R22_5.xml" configId="dual" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.0" repr="wheelBackLeft"   forcePointRatio="0.46" initialCompression="20" suspTravel="0.17" spring="23" damper="50" frictionScale="2" yOffset="0.014"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/_13R22_5.xml" configId="dualRim" isLeft="true" offset="0.1" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/_13R22_5.xml" configId="dual" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.0" repr="wheelBackRight"  forcePointRatio="0.46" initialCompression="20" suspTravel="0.17" spring="23" damper="50" frictionScale="2" yOffset="0.014"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/_13R22_5.xml" configId="dualRim" isLeft="false" offset="0.1" />
+                    </wheel>
+                    <wheel>
+                        <physics restLoad="1.0" repr="trackWheel" radius="0.22" width="2.5" forcePointRatio="0.1" initialCompression="15" suspTravel="0.03" spring="90" damper="50" frictionScale="2" />
+                    </wheel>
+                </wheels>
+
+                <crawlers>
+                    <crawler filename="$data/shared/crawlers/lizard/moduleXCrawler/moduleXCrawler.xml" linkNode="leftTrack"  wheelIndex="5" isLeft="true"/>
+                    <crawler filename="$data/shared/crawlers/lizard/moduleXCrawler/moduleXCrawler.xml" linkNode="rightTrack" wheelIndex="5" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+        </wheelConfigurations>
+    </wheels>
+
+    <rimColorConfigurations useDefaultColors="false">
+        <rimColorConfiguration name="$l10n_ui_colorChrome" color="SHARED_WHITE1" material="3" price="2000"/>
+        <rimColorConfiguration name="$l10n_ui_colorSilver" color="SHARED_WHITE1" material="18" price="0"/>
+        <rimColorConfiguration name="$l10n_ui_colorWhite"  color="SHARED_WHITE2" material="1" price="0"/>
+        <rimColorConfiguration name="$l10n_ui_colorBlack"  color="SHARED_DA_METAL_BLACK" material="1" price="0"/>
+    </rimColorConfigurations>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="chockSupport01" filename="$data/shared/assets/wheelChocks/wheelChockSupport01.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="chockSupport02" filename="$data/shared/assets/wheelChocks/wheelChockSupport01.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="semiTrailerAttacherJoint" jointType="semitrailer" attacherHeight="1.33"/>
+        </inputAttacherJoints>
+        <support animationName="moveSupport" />
+        <brakeForce force="0.6"/>
+    </attachable>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn01"  length="1.9" diameter="0.02" minCenterPointOffset="0 -0.2 -0.1" maxCenterPointOffset="0 0 2"/>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut01" length="1.9" diameter="0.02" minCenterPointOffset="0 -0.2 -0.1" maxCenterPointOffset="0 0 2"/>
+    </connectionHoses>
+
+    <powerConsumer ptoRpm="275" neededMinPtoPower="10" neededMaxPtoPower="10"/>
+
+    <lights>
+        <sharedLight linkNode="workingLightSquare_02_01" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight09.xml" />
+        <sharedLight linkNode="workingLightSquare_02_02" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight09.xml" />
+        <sharedLight linkNode="workingLightSquare_02_03" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight09.xml" />
+        <sharedLight linkNode="workingLightSquare_02_04" lightTypes="1" filename="$data/shared/assets/lights/lizard/workingLight09.xml" />
+        <sharedLight linkNode="rearLightOvalOrange_01_01"  filename="$data/shared/assets/lights/lizard/rearLight23Orange_left.xml" />
+        <sharedLight linkNode="rearLightOvalOrange_01_02"  filename="$data/shared/assets/lights/lizard/rearLight23Orange_right.xml" />
+        <sharedLight linkNode="rearLightOvalLEDRed_01_01"  filename="$data/shared/assets/lights/lizard/rearLight23Red.xml" />
+        <sharedLight linkNode="rearLightOvalLEDRed_01_02"  filename="$data/shared/assets/lights/lizard/rearLight23Red.xml" />
+        <sharedLight linkNode="yellowRectangle_01_01"      filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="yellowRectangle_01_02"      filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="yellowRectangle_01_03"      filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="yellowRectangle_01_04"      filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="yellowRectangle_01_05"      filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="yellowRectangle_01_06"      filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="yellowRectangle_01_07"      filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="yellowRectangle_01_08"      filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="yellowRectangle_01_09"      filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="yellowRectangle_01_10"      filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+
+        <realLights>
+            <low>
+                <light node="workLightBackLow" lightTypes="1" />
+            </low>
+            <high>
+                <light node="workLightBackHigh" lightTypes="1" />
+                <light node="backLightsHigh1" lightTypes="0" />
+                <turnLightLeft node="turnLightLeftBack" />
+                <turnLightRight node="turnLightRightBack" />
+                <brakeLight node="backLightsHigh1" />
+            </high>
+        </realLights>
+    </lights>
+
+    <licensePlates>
+        <licensePlate node="licensePlateBack"  position="BACK"  preferedType="SQUARISH" placementArea="0.05 0.2 0.2 0.2"/>
+    </licensePlates>
+
+    <animations>
+        <!-- move from transport to work position -->
+        <animation name="baleGrabberTransportToWork">
+            <part node="plattform" startTime="0" endTime="3" startRot="0 0 0" endRot="-23 0 0"/>
+            <part node="tracks" startTime="2.1" endTime="3" startRot="0 0 0" endRot="15 0 0"/>
+            <part node="backArm" startTime="2" endTime="3" startRot="0 0 0" endRot="11 0 0"/>
+
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="2.99" volumeScale="1.6" pitchScale="0.7" />
+            <sound template="hydraulicLayerTone"    startTime="0.01" endTime="2.99" volumeScale="1.6" pitchScale="0.5" />
+            <sound template="metalClose"            startTime="0.05" direction="1"  volumeScale="3.5" pitchScale="0.3"/>
+            <sound template="clackVar2"             startTime="0.05" direction="0"  volumeScale="1.7" pitchScale="1"/>
+            <sound template="cylinderPunch"         startTime="0.15"                volumeScale="1.5"/>
+            <sound template="metalLowVar2"          startTime="2.99" direction="1"  volumeScale="4.5" pitchScale="0.9"/>
+            <sound template="metalOpen"             startTime="2.80" direction="1"  volumeScale="2.5" pitchScale="0.4"/>
+            <sound template="cylinderPunch"         startTime="2.99" direction="1"  volumeScale="1.5"/>
+            <sound template="thudVar2"              startTime="2.9"  direction="-1" volumeScale="2.4" pitchScale="0.7"/>
+            <sound template="clackVar6"             startTime="2.99" direction="-1" volumeScale="1.7" pitchScale="0.3"/>
+            <sound template="metalClose"            startTime="0.01" direction="-1" volumeScale="2.0" pitchScale="1.1"/>
+            <sound template="latchSmall"            startTime="0.03" direction="-1" volumeScale="0.1" pitchScale="0.6"/>
+        </animation>
+
+        <!-- move bale down -->
+        <animation name="emptyRotateSquare" resetOnStart="false">
+            <part node="balePlaceS01Unload" startTime="0.0" endTime="2.94"  startTrans="0.0 1.789 10.345" endTrans="0.0 1.267 7.828" startRot="-11.952 0.0 0.0" endRot="-11.761 0.0 0.0" />
+            <part node="balePlaceS01Unload" startTime="2.94" endTime="5.96"  startTrans="0.0 1.267 7.828" endTrans="0.0 0.421 3.717" startRot="-11.761 0.0 0.0" endRot="-11.677 0.0 0.0" />
+            <part node="balePlaceS01Unload" startTime="5.96" endTime="6.44"  startTrans="0.0 0.421 3.717" endTrans="0.0 0.28 3.087" startRot="-11.677 0.0 0.0" endRot="-11.818 0.0 0.0" />
+            <part node="balePlaceS01Unload" startTime="6.44" endTime="7.45"  startTrans="0.0 0.28 3.087" endTrans="0.0 0.296 2.068" startRot="-11.818 0.0 0.0" endRot="-6.118 0.0 0.0" />
+            <part node="balePlaceS01Unload" startTime="7.45" endTime="9.61"  startTrans="0.0 0.296 2.068" endTrans="0.0 0.285 -0.186" startRot="-6.118 0.0 0.0" endRot="6.735 0.0 0.0" />
+            <part node="balePlaceS01Unload" startTime="9.61" endTime="10.0"  startTrans="0.0 0.285 -0.186" endTrans="0.0 0.231 -0.592" startRot="6.735 0.0 0.0" endRot="11.169 0.0 0.0" />
+
+            <part node="balePlaceS02Unload" startTime="0.0" endTime="2.94"  startTrans="0.0 0.784 5.568" endTrans="0.0 0.286 3.113" startRot="-11.952 0.0 0.0" endRot="-11.761 0.0 0.0" />
+            <part node="balePlaceS02Unload" startTime="2.94" endTime="5.19"  startTrans="0.0 0.286 3.113" endTrans="0.0 0.289 -0.267" startRot="-11.761 0.0 0.0" endRot="7.6 0.0 0.0" />
+            <part node="balePlaceS02Unload" startTime="5.19" endTime="5.46"  startTrans="0.0 0.289 -0.267" endTrans="0.0 0.206 -0.537" startRot="7.6 0.0 0.0" endRot="10.864 0.0 0.0" />
+            <part node="balePlaceS02Unload" startTime="5.46" endTime="5.67"  startTrans="0.0 0.206 -0.537" endTrans="0.0 0.29 -0.858" startRot="10.864 0.0 0.0" endRot="10.844 0.0 0.0" />
+            <part node="balePlaceS02Unload" startTime="5.67" endTime="6.43"  startTrans="0.0 0.29 -0.858" endTrans="0.0 0.495 -1.906" startRot="10.844 0.0 0.0" endRot="10.901 0.0 0.0" />
+            <part node="balePlaceS02Unload" startTime="6.43" endTime="10.0"  startTrans="0.0 0.495 -1.906" endTrans="0.0 1.182 -5.38" startRot="10.901 0.0 0.0" endRot="11.169 0.0 0.0" />
+
+            <part node="chains" startTime="0" endTime="10.0" shaderParameter="offsetUV" shaderStartValues="0 100 0 0" shaderEndValues="0 0 0 0" />
+            <part node="rotationNode" startTime="0" endTime="10.0" startRot="10000 0 0" endRot="0 0 0"/>
+
+            <sound template="COTTON_LOADER" startTime="0.01" endTime="9.99" linkNode="moduleX_main_component1" />
+        </animation>
+        <animation name="emptyRotateRound" resetOnStart="false">
+            <part node="balePlaceR01Unload" startTime="0.0" endTime="3.75"  startTrans="0.0 2.032 11.569" endTrans="0.0 1.557 9.326" />
+            <part node="balePlaceR01Unload" startTime="3.75" endTime="12.375"  startTrans="0.0 1.557 9.326" endTrans="0.0 0.075 2.391" />
+            <part node="balePlaceR01Unload" startTime="12.375" endTime="13.125"  startTrans="0.0 0.075 2.391" endTrans="0.0 0.027 1.764" startRot="-11.952 0.0 0.0" endRot="-5.417 0.0 0.0" />
+            <part node="balePlaceR01Unload" startTime="13.125" endTime="15.0"  startTrans="0.0 0.027 1.764" endTrans="0.0 -0.029 0.508" startRot="-5.417 0.0 0.0" endRot="10.921 0.0 0.0" />
+            <part node="balePlaceR02Unload" startTime="0.0" endTime="3.75"  startTrans="0.0 1.523 9.168" endTrans="0.0 1.048 6.924" />
+            <part node="balePlaceR02Unload" startTime="3.75" endTime="8.625"  startTrans="0.0 1.048 6.924" endTrans="0.0 0.196 3.011" />
+            <part node="balePlaceR02Unload" startTime="8.625" endTime="11.625"  startTrans="0.0 0.196 3.011" endTrans="0.0 0.015 0.218" startRot="-11.952 0.0 0.0" endRot="10.815 0.0 0.0" />
+            <part node="balePlaceR02Unload" startTime="11.625" endTime="13.125"  startTrans="0.0 0.015 0.218" endTrans="0.0 0.206 -0.737" startRot="10.815 0.0 0.0" endRot="10.891 0.0 0.0" />
+            <part node="balePlaceR02Unload" startTime="13.125" endTime="15.0"  startTrans="0.0 0.206 -0.737" endTrans="0.0 0.416 -1.797" startRot="10.891 0.0 0.0" endRot="10.921 0.0 0.0" />
+            <part node="balePlaceR03Unload" startTime="0.0" endTime="3.75"  startTrans="0.0 1.013 6.759" endTrans="0.0 0.538 4.515" />
+            <part node="balePlaceR03Unload" startTime="3.75" endTime="5.625"  startTrans="0.0 0.538 4.515" endTrans="0.0 0.174 2.793" />
+            <part node="balePlaceR03Unload" startTime="5.625" endTime="8.625"  startTrans="0.0 0.174 2.793" endTrans="0.0 -0.017 0.332" startRot="-11.952 0.0 0.0" endRot="10.706 0.0 0.0" />
+            <part node="balePlaceR03Unload" startTime="8.625" endTime="9.75"  startTrans="0.0 -0.017 0.332" endTrans="0.0 0.166 -0.593" startRot="10.706 0.0 0.0" endRot="10.816 0.0 0.0" />
+            <part node="balePlaceR03Unload" startTime="9.75" endTime="11.625"  startTrans="0.0 0.166 -0.593" endTrans="0.0 0.446 -2.084" startRot="10.816 0.0 0.0" endRot="10.864 0.0 0.0" />
+            <part node="balePlaceR03Unload" startTime="11.625" endTime="15.0"  startTrans="0.0 0.446 -2.084" endTrans="0.0 0.86 -4.096" startRot="10.864 0.0 0.0" endRot="10.921 0.0 0.0" />
+            <part node="balePlaceR04Unload" startTime="0.0" endTime="3.75"  startTrans="0.0 0.5 4.332" endTrans="0.0 0.025 2.088" />
+            <part node="balePlaceR04Unload" startTime="3.75" endTime="5.625"  startTrans="0.0 0.025 2.088" endTrans="0.0 0.03 0.106" startRot="-11.952 0.0 0.0" endRot="10.655 0.0 0.0" />
+            <part node="balePlaceR04Unload" startTime="5.625" endTime="6.75"  startTrans="0.0 0.03 0.106" endTrans="0.0 0.197 -0.705" startRot="10.655 0.0 0.0" endRot="10.769 0.0 0.0" />
+            <part node="balePlaceR04Unload" startTime="6.75" endTime="8.625"  startTrans="0.0 0.197 -0.705" endTrans="0.0 0.435 -1.968" startRot="10.769 0.0 0.0" endRot="10.819 0.0 0.0" />
+            <part node="balePlaceR04Unload" startTime="8.625" endTime="11.625"  startTrans="0.0 0.435 -1.968" endTrans="0.0 0.907 -4.378" startRot="10.819 0.0 0.0" endRot="10.877 0.0 0.0" />
+            <part node="balePlaceR04Unload" startTime="11.625" endTime="15.0"  startTrans="0.0 0.907 -4.378" endTrans="0.0 1.304 -6.398" startRot="10.877 0.0 0.0" endRot="10.921 0.0 0.0" />
+
+            <part node="chains" startTime="0" endTime="15.0" shaderParameter="offsetUV" shaderStartValues="0 150 0 0" shaderEndValues="0 0 0 0" />
+            <part node="rotationNode" startTime="0" endTime="15.0" startRot="15000 0 0" endRot="0 0 0"/>
+
+            <sound template="COTTON_LOADER" startTime="0.01" endTime="14.99" linkNode="moduleX_main_component1" />
+        </animation>
+
+        <!-- move bale up -->
+        <animation name="moveBalePlacesSquare">
+            <part node="balePlaceS01" startTime="0.5" endTime="1.0"  startTrans="0.0 0.716 -10.64" endTrans="0.0 0.536 -9.703" startRot="19.105 0.0 0.0" endRot="13.769 0.0 0.0" />
+            <part node="balePlaceS01" startTime="1.0" endTime="1.5"  startTrans="0.0 0.536 -9.703" endTrans="0.0 0.281 -8.513" startRot="13.769 0.0 0.0" endRot="6.044 0.0 0.0" />
+            <part node="balePlaceS01" startTime="1.5" endTime="2.1"  startTrans="0.0 0.281 -8.513" endTrans="0.0 0.019 -7.046" startRot="6.044 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="balePlaceS01" startTime="2.1" endTime="5.0"  startTrans="0.0 0.019 -7.046" endTrans="0.0 0.0 0.0" />
+
+            <part node="balePlaceS02" startTime="5.0" endTime="6.0"  startTrans="0.0 0.753 -5.937" endTrans="0.0 0.635 -5.365" startRot="19.819 0.0 0.0" endRot="16.338 0.0 0.0" />
+            <part node="balePlaceS02" startTime="6.0" endTime="6.75"  startTrans="0.0 0.635 -5.365" endTrans="0.0 0.423 -4.339" startRot="16.338 0.0 0.0" endRot="10.798 0.0 0.0" />
+            <part node="balePlaceS02" startTime="6.75" endTime="7.5"  startTrans="0.0 0.423 -4.339" endTrans="0.0 0.171 -3.209" startRot="10.798 0.0 0.0" endRot="3.806 0.0 0.0" />
+            <part node="balePlaceS02" startTime="7.5" endTime="8.0"  startTrans="0.0 0.171 -3.209" endTrans="0.0 0.0 -2.466" startRot="3.806 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="balePlaceS02" startTime="8.0" endTime="10.0"  startTrans="0.0 0.0 -2.466" endTrans="0.0 0.0 0.0" />
+
+            <part node="chains" startTime="0" endTime="10.0" shaderParameter="offsetUV" shaderStartValues="0 0 0 0" shaderEndValues="0 100 0 0" />
+            <part node="rotationNode" startTime="0" endTime="10.0" startRot="0 0 0" endRot="10000 0 0"/>
+
+            <sound template="COTTON_LOADER" startTime="0.01" endTime="9.99"/>
+        </animation>
+        <animation name="moveBalePlacesRound">
+            <part node="balePlaceR01" startTime="0.0" endTime="0.263"  startTrans="0.0 0.204 -11.117" endTrans="0.0 0.225 -11.016" startRot="22.401 0.0 0.0" endRot="17.544 0.0 0.0" />
+            <part node="balePlaceR01" startTime="0.263" endTime="0.412"  startTrans="0.0 0.225 -11.016" endTrans="0.0 0.208 -10.852" startRot="17.544 0.0 0.0" endRot="14.521 0.0 0.0" />
+            <part node="balePlaceR01" startTime="0.412" endTime="0.563"  startTrans="0.0 0.208 -10.852" endTrans="0.0 0.144 -10.556" startRot="14.521 0.0 0.0" endRot="10.944 0.0 0.0" />
+            <part node="balePlaceR01" startTime="0.563" endTime="0.863"  startTrans="0.0 0.144 -10.556" endTrans="0.0 0.0 -9.763" startRot="10.944 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="balePlaceR01" startTime="0.863" endTime="3.75"  startTrans="0.0 0.0 -9.763" endTrans="0.0 0.0 0.0" />
+            <part node="balePlaceR02" startTime="3.75" endTime="4.125"  startTrans="0.0 0.204 -8.662" endTrans="0.0 0.222 -8.505" startRot="22.401 0.0 0.0" endRot="16.112 0.0 0.0" />
+            <part node="balePlaceR02" startTime="4.125" endTime="4.5"  startTrans="0.0 0.222 -8.505" endTrans="0.0 0.111 -7.924" startRot="16.112 0.0 0.0" endRot="7.922 0.0 0.0" />
+            <part node="balePlaceR02" startTime="4.5" endTime="4.875"  startTrans="0.0 0.111 -7.924" endTrans="0.0 -0.0 -7.104" startRot="7.922 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="balePlaceR02" startTime="4.875" endTime="7.5"  startTrans="0.0 -0.0 -7.104" endTrans="0.0 0.0 0.0" />
+            <part node="balePlaceR03" startTime="7.5" endTime="7.875"  startTrans="0.0 0.204 -6.199" endTrans="0.0 0.222 -6.054" startRot="22.401 0.0 0.0" endRot="16.289 0.0 0.0" />
+            <part node="balePlaceR03" startTime="7.875" endTime="8.25"  startTrans="0.0 0.222 -6.054" endTrans="0.0 0.133 -5.587" startRot="16.289 0.0 0.0" endRot="9.724 0.0 0.0" />
+            <part node="balePlaceR03" startTime="8.25" endTime="8.625"  startTrans="0.0 0.133 -5.587" endTrans="0.0 0.0 -4.895" startRot="9.724 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="balePlaceR03" startTime="8.625" endTime="11.25"  startTrans="0.0 0.0 -4.895" endTrans="0.0 0.0 0.0" />
+            <part node="balePlaceR04" startTime="11.25" endTime="11.625"  startTrans="0.0 0.204 -3.719" endTrans="0.0 0.224 -3.629" startRot="22.401 0.0 0.0" endRot="17.482 0.0 0.0" />
+            <part node="balePlaceR04" startTime="11.625" endTime="12.0"  startTrans="0.0 0.224 -3.629" endTrans="0.0 0.197 -3.42" startRot="17.482 0.0 0.0" endRot="13.82 0.0 0.0" />
+            <part node="balePlaceR04" startTime="12.0" endTime="12.75"  startTrans="0.0 0.197 -3.42" endTrans="0.0 0.028 -2.665" startRot="13.82 0.0 0.0" endRot="3.901 0.0 0.0" />
+            <part node="balePlaceR04" startTime="12.75" endTime="13.5"  startTrans="0.0 0.028 -2.665" endTrans="0.0 0.0 -1.594" startRot="3.901 0.0 0.0" endRot="0.0 0.0 0.0" />
+            <part node="balePlaceR04" startTime="13.5" endTime="15.0"  startTrans="0.0 0.0 -1.594" endTrans="0.0 0.0 0.0" />
+
+            <part node="chains" startTime="0" endTime="15.0" shaderParameter="offsetUV" shaderStartValues="0 0 0 0" shaderEndValues="0 150 0 0" />
+            <part node="rotationNode" startTime="0" endTime="15.0" startRot="0 0 0" endRot="15000 0 0"/>
+
+            <sound template="COTTON_LOADER" startTime="0.01" endTime="14.99"/>
+        </animation>
+
+        <!-- reset after unloading -->
+        <animation name="releaseFrontplattformSquare" resetOnStart="false">
+            <part node="balePlaceS01Unload" startTime="0.0" endTime="0.1" endTrans="0.0 1.789 10.345" endRot="-11.952 0.0 0.0"/>
+            <part node="balePlaceS02Unload" startTime="0.0" endTime="0.1" endTrans="0.0 0.784 5.568" endRot="-11.952 0.0 0.0"/>
+            <part node="balePlaceS01" startTime="0.0" endTime="0.1" endTrans="0.0 0.716 -10.6" endRot="19.819 0.0 0.0"/>
+            <part node="balePlaceS02" startTime="0.0" endTime="0.1" endTrans="0.0 0.753 -5.937" endRot="10.798 0.0 0.0"/>
+        </animation>
+        <animation name="releaseFrontplattformRound" resetOnStart="false">
+            <part node="balePlaceR01Unload" startTime="0.0" endTime="0.1" endTrans="0.0 2.032 11.569" endRot="-11.952 0.0 0.0"/>
+            <part node="balePlaceR02Unload" startTime="0.0" endTime="0.1" endTrans="0.0 1.523 9.168" endRot="-11.952 0.0 0.0"/>
+            <part node="balePlaceR03Unload" startTime="0.0" endTime="0.1" endTrans="0.0 1.013 6.759" endRot="-11.952 0.0 0.0"/>
+            <part node="balePlaceR04Unload" startTime="0.0" endTime="0.1" endTrans="0.0 0.5 4.332" endRot="-11.952 0.0 0.0"/>
+            <part node="balePlaceR01" startTime="0.0" endTime="0.1" endTrans="0.0 0.204 -11.117" endRot="22.401 0.0 0.0"/>
+            <part node="balePlaceR02" startTime="0.0" endTime="0.1" endTrans="0.0 0.204 -8.662" endRot="22.401 0.0 0.0"/>
+            <part node="balePlaceR03" startTime="0.0" endTime="0.1" endTrans="0.0 0.204 -6.199" endRot="22.401 0.0 0.0"/>
+            <part node="balePlaceR04" startTime="0.0" endTime="0.1" endTrans="0.0 0.204 -3.719" endRot="22.401 0.0 0.0"/>
+        </animation>
+
+        <animation name="baleGrabberWorkToDrop"/>
+        <animation name="baleGrabberDropBale"/>
+        <animation name="frontBalePusher"/>
+        <animation name="balesToOtherRow"/>
+        <animation name="rotatePlatform"/>
+        <animation name="moveBalePlacesToEmpty"/>
+        <animation name="moveBalePusherToEmpty"/>
+        <animation name="emptyHidePusher1"/>
+        <animation name="closeGrippers"/>
+
+        <animation name="moveSupport">
+            <part node="supportCol" startTime="0" endTime="0.5" startTrans="0 0 0" endTrans="0 -0.85 0" />
+            <part node="standLeg" startTime="0" endTime="0.5" startTrans="0 0.517 0" endTrans="0 -0.05 0" />
+
+            <sound template="clackVar6" startTime="0.49" direction="1" volumeScale="1.7" pitchScale="0.8" linkNode="semiTrailerAttacherJoint"/>
+            <sound template="clackVar5" startTime="0.2" direction="-1" volumeScale="1.7" pitchScale="0.8" linkNode="semiTrailerAttacherJoint"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="plattform" wheelIndices="5" playSound="true">
+                <dependentPart node="platformHydraulic" />
+            </movingTool>
+
+            <movingTool node="tracks" wheelIndices="5" playSound="true"/>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="platformHydraulic" referencePoint="platformHydraulicRef" referenceFrame="platformHydraulicRef">
+                <translatingPart node="platformHydraulicPunch" />
+            </movingPart>
+        </movingParts>
+    </cylindered>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_bale" fillTypes="SQUAREBALE_COTTON" capacity="2"/>
+                    <fillUnit unitTextOverride="$l10n_unit_bale" fillTypes="ROUNDBALE_COTTON" capacity="4"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <baleLoader transportPositionAfterUnloading="true" automaticUnloading="true">
+        <grabber grabNode="baleGrabNode" triggerNode="baleGrabberTrigger" pickupRange="1.5"/>
+
+        <baleTypes>
+            <baleType fillUnitIndex="1" width="2.44" height="2.44" length="4.88">
+                <balePlaces startBalePlace="startBalePlaceSquare">
+                    <balePlace node="balePlaceS01"/>
+                    <balePlace node="balePlaceS02"/>
+                </balePlaces>
+
+                <animations>
+                    <emptyRotate name="emptyRotateSquare" reset="false"/>
+                    <moveBalePlaces name="moveBalePlacesSquare" alwaysMove="true"/>
+                    <releaseFrontPlatform name="releaseFrontplattformSquare" />
+                </animations>
+            </baleType>
+            <baleType fillUnitIndex="2" width="2.38" diameter="2.38">
+                <balePlaces startBalePlace="startBalePlaceRound">
+                    <balePlace node="balePlaceR01"/>
+                    <balePlace node="balePlaceR02"/>
+                    <balePlace node="balePlaceR03"/>
+                    <balePlace node="balePlaceR04"/>
+                </balePlaces>
+
+                <animations>
+                    <emptyRotate name="emptyRotateRound" reset="false"/>
+                    <moveBalePlaces name="moveBalePlacesRound" alwaysMove="true"/>
+                    <releaseFrontPlatform name="releaseFrontplattformRound" />
+                </animations>
+            </baleType>
+			<!-- Custom bales -->
+            <baleType fillUnitIndex="1" width="2.45" height="2.44" length="4.88">
+                <balePlaces startBalePlace="startBalePlaceSquare">
+                    <balePlace node="balePlaceS01"/>
+                    <balePlace node="balePlaceS02"/>
+                </balePlaces>
+
+                <animations>
+                    <emptyRotate name="emptyRotateSquare" reset="false"/>
+                    <moveBalePlaces name="moveBalePlacesSquare" alwaysMove="true"/>
+                    <releaseFrontPlatform name="releaseFrontplattformSquare" />
+                </animations>
+            </baleType>
+            <baleType fillUnitIndex="2" width="2.35" diameter="2.38">
+                <balePlaces startBalePlace="startBalePlaceRound">
+                    <balePlace node="balePlaceR01"/>
+                    <balePlace node="balePlaceR02"/>
+                    <balePlace node="balePlaceR03"/>
+                    <balePlace node="balePlaceR04"/>
+                </balePlaces>
+
+                <animations>
+                    <emptyRotate name="emptyRotateRound" reset="false"/>
+                    <moveBalePlaces name="moveBalePlacesRound" alwaysMove="true"/>
+                    <releaseFrontPlatform name="releaseFrontplattformRound" />
+                </animations>
+            </baleType>
+        </baleTypes>
+
+        <dynamicMount enabled="true" doInterpolation="true" minTransLimits="0 0 -0.03" maxTransLimits="0 0.4 0.03" />
+
+        <texts lowering="$l10n_info_balestackerLoweringTable" tilting="$l10n_info_balestackerTiltingTable"/>
+    </baleLoader>
+
+    <ai>
+        <agentAttachment jointNode="semiTrailerAttacherJoint" rotCenterWheelIndices="1 2 3 4" width="2.9" height="4.75" length="14.8" lengthOffset="2"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.4" maxX="1.4" minZ="-0.8" maxZ="7" yOffset="0.9" />
+        <bendingNode minX="-1.4" maxX="1.4" minZ="-7.5" maxZ="-0.8" yOffset="0.6" />
+        <bendingNode minX="-1.2" maxX="1.2" minZ="-3.6" maxZ="-2.5" yOffset="0.3" node="plattform" />
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="moduleX_main_component1" node="0>" />
+        <i3dMapping id="moduleX_vis" node="0>0" />
+        <i3dMapping id="semiTrailerAttacherJoint" node="0>0|0|0" />
+        <i3dMapping id="supportCol" node="0>0|0|1" />
+        <i3dMapping id="standLeg" node="0>0|0|2" />
+        <i3dMapping id="hydraulicIn01" node="0>0|0|3|0" />
+        <i3dMapping id="hydraulicOut01" node="0>0|0|3|1" />
+        <i3dMapping id="wheelChock02" node="0>0|0|4|0" />
+        <i3dMapping id="wheelChock01" node="0>0|0|4|1" />
+        <i3dMapping id="chockSupport02" node="0>0|0|4|2" />
+        <i3dMapping id="chockSupport01" node="0>0|0|4|3" />
+        <i3dMapping id="wheelFrontLeft" node="0>0|1|0" />
+        <i3dMapping id="wheelFrontRight" node="0>0|1|1" />
+        <i3dMapping id="wheelBackLeft" node="0>0|1|2" />
+        <i3dMapping id="wheelBackRight" node="0>0|1|3" />
+        <i3dMapping id="yellowRectangle_01_10" node="0>0|2|0|0" />
+        <i3dMapping id="yellowRectangle_01_09" node="0>0|2|0|1" />
+        <i3dMapping id="plattform" node="0>0|3|0" />
+        <i3dMapping id="yellowRectangle_01_01" node="0>0|3|0|0|0|0" />
+        <i3dMapping id="yellowRectangle_01_02" node="0>0|3|0|0|0|1" />
+        <i3dMapping id="yellowRectangle_01_03" node="0>0|3|0|0|0|2" />
+        <i3dMapping id="yellowRectangle_01_04" node="0>0|3|0|0|0|3" />
+        <i3dMapping id="yellowRectangle_01_05" node="0>0|3|0|0|0|4" />
+        <i3dMapping id="yellowRectangle_01_06" node="0>0|3|0|0|0|5" />
+        <i3dMapping id="yellowRectangle_01_07" node="0>0|3|0|0|0|6" />
+        <i3dMapping id="yellowRectangle_01_08" node="0>0|3|0|0|0|7" />
+        <i3dMapping id="rearLightOvalOrange_01_01" node="0>0|3|0|0|0|8" />
+        <i3dMapping id="rearLightOvalOrange_01_02" node="0>0|3|0|0|0|9" />
+        <i3dMapping id="rearLightOvalLEDRed_01_01" node="0>0|3|0|0|0|10" />
+        <i3dMapping id="rearLightOvalLEDRed_01_02" node="0>0|3|0|0|0|11" />
+        <i3dMapping id="workingLightSquare_02_01" node="0>0|3|0|0|0|12" />
+        <i3dMapping id="workingLightSquare_02_02" node="0>0|3|0|0|0|13" />
+        <i3dMapping id="workingLightSquare_02_03" node="0>0|3|0|0|0|14" />
+        <i3dMapping id="workingLightSquare_02_04" node="0>0|3|0|0|0|15" />
+        <i3dMapping id="turnLightLeftBack" node="0>0|3|0|0|1|0" />
+        <i3dMapping id="turnLightRightBack" node="0>0|3|0|0|1|1" />
+        <i3dMapping id="backLightsHigh1" node="0>0|3|0|0|2|0" />
+        <i3dMapping id="workLightBackLow" node="0>0|3|0|0|3|0" />
+        <i3dMapping id="workLightBackHigh" node="0>0|3|0|0|3|1" />
+        <i3dMapping id="baleLoader" node="0>0|3|0|1" />
+        <i3dMapping id="baleGrabNode" node="0>0|3|0|1|0" />
+        <i3dMapping id="baleGrabberTrigger" node="0>0|3|0|1|1" />
+        <i3dMapping id="startBalePlaceRound" node="0>0|3|0|1|2" />
+        <i3dMapping id="balePlaceR01Unload" node="0>0|3|0|1|3|0" />
+        <i3dMapping id="balePlaceR01" node="0>0|3|0|1|3|0|0" />
+        <i3dMapping id="balePlaceR02Unload" node="0>0|3|0|1|3|1" />
+        <i3dMapping id="balePlaceR02" node="0>0|3|0|1|3|1|0" />
+        <i3dMapping id="balePlaceR03Unload" node="0>0|3|0|1|3|2" />
+        <i3dMapping id="balePlaceR03" node="0>0|3|0|1|3|2|0" />
+        <i3dMapping id="balePlaceR04Unload" node="0>0|3|0|1|3|3" />
+        <i3dMapping id="balePlaceR04" node="0>0|3|0|1|3|3|0" />
+        <i3dMapping id="startBalePlaceSquare" node="0>0|3|0|1|4" />
+        <i3dMapping id="balePlacesSquare" node="0>0|3|0|1|5" />
+        <i3dMapping id="balePlaceS01Unload" node="0>0|3|0|1|5|0" />
+        <i3dMapping id="balePlaceS01" node="0>0|3|0|1|5|0|0" />
+        <i3dMapping id="balePlaceS02Unload" node="0>0|3|0|1|5|1" />
+        <i3dMapping id="balePlaceS02" node="0>0|3|0|1|5|1|0" />
+        <i3dMapping id="tracks" node="0>0|3|0|2" />
+        <i3dMapping id="leftTrack" node="0>0|3|0|2|0" />
+        <i3dMapping id="rightTrack" node="0>0|3|0|2|1" />
+        <i3dMapping id="trackWheel" node="0>0|3|0|2|2" />
+        <i3dMapping id="chains" node="0>0|3|0|3|0" />
+        <i3dMapping id="rotationNode" node="0>0|3|0|3|1" />
+        <i3dMapping id="backArm" node="0>0|3|0|3|2" />
+        <i3dMapping id="licensePlateBack" node="0>0|3|0|4" />
+        <i3dMapping id="platformHydraulicRef" node="0>0|3|0|5" />
+        <i3dMapping id="curtain" node="0>0|3|0|6|1" />
+        <i3dMapping id="platformHydraulic" node="0>0|4|0" />
+        <i3dMapping id="platformHydraulicPunch" node="0>0|4|0|0" />
+    </i3dMappings>
+</vehicle>
